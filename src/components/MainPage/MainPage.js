@@ -1,11 +1,10 @@
 import styles from './MainPage.module.scss';
 
-function MainPage() {
-  return (
-    <div className="App">
-      Hello world
-    </div>
-  );
+const MainPage = () => {
+    return (
+        <div className={styles.mainPage}>This is main page</div>
+    );
 }
 
-export default MainPage;
+export default MainPage
+    ;
