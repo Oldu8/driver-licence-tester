@@ -1,5 +1,24 @@
-.wrapper {
+.main {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 100vh;
+  padding: 0 5%;
+  border: 0.75rem solid rgb(108, 106, 106);
+  background-color: #0e31afa4;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(105, 164, 196, 1) 24%,
+    rgba(128, 0, 255, 1) 96%
+  );
+}
+
+.wrapper {
+  background-color: aliceblue;
+  border-radius: 5px;
+  min-height: 50vh;
+  margin: 0 auto;
+  display: block;
+  min-width: 100%;
 }

@@ -1,6 +1,5 @@
 .header {
-  background: radial-gradient(at bottom, #1a4678, #1cb0b8);
-  padding: 20px;
+  padding: 2% 0;
 }
 
 .listOfLinks {
@@ -8,19 +7,33 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .leftLinks {
   display: flex;
   flex-direction: row;
 }
 
 .navLink {
-  color: rgb(232, 246, 248);
-  font-weight: 700;
+  background-color: rgb(198, 221, 255);
+  border: 1px solid black;
+  min-width: 170px;
+  border-radius: 15px;
+  padding: 1rem;
+  font-weight: 500;
   font-size: 1.2vw;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
-  margin: 5px;
-
+  margin-right: 1rem;
   &:hover {
-    outline: 3px solid grey;
+    outline: 3px solid rgb(146, 49, 49);
   }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.img {
+  width: 57px;
+  height: 47px;
 }

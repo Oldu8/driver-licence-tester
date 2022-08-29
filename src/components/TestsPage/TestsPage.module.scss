@@ -1,0 +1,70 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 55%;
+  align-self: center;
+  padding: 20px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
+
+.mainText {
+  width: 50%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 10px auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  background-color: rgb(198, 221, 255);
+  border: 1px solid black;
+  min-width: 300px;
+  border-radius: 15px;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  position: relative;
+  &:hover {
+    outline: 3px solid rgb(146, 49, 49);
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/icons/downArrow.svg");
+  }
+}
