@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.button {
+  border: 2px solid rgb(3, 0, 8);
+  border-radius: 25%;
+  padding: 1rem;
+  background-color: rgb(237, 166, 35);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

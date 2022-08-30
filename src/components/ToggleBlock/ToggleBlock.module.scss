@@ -1,46 +1,4 @@
-.wrapper {
-  min-height: 150vh;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.imageContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.img {
-  width: 400px;
-  align-self: center;
-  padding: 20px;
-}
-
-.headline {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 500;
-  padding: 1.5rem 0;
-}
-
-.mainText {
-  width: 50%;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 300;
-  margin: 10px auto;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  padding: 5rem 0;
-  justify-content: space-around;
-}
-
-.link {
+.container {
   background-color: rgb(198, 221, 255);
   border: 1px solid black;
   min-width: 300px;
@@ -69,4 +27,9 @@
     height: 30px;
     background-image: url("../../assets/icons/downArrow.svg");
   }
+}
+
+.listOfTests {
+  margin: 0;
+  list-style-type: none;
 }

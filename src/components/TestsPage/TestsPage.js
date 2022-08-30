@@ -1,11 +1,11 @@
 import styles from './TestsPage.module.scss';
 import { Link } from 'react-router-dom';
+import ToggleBlock from '../ToggleBlock/ToggleBlock';
 import quizBanner from "../../assets/images/quizBanner.svg"
-// import downArrow from "../../assets/icons/downArrow.svg"
 
 function TestsPage() {
   return (
-    <section>
+    <section className={styles.wrapper}>
       <div className={styles.content}>
         <h2 className={styles.headline}>Choose test category to start</h2>
         <div className={styles.imageContainer}>
@@ -14,10 +14,9 @@ function TestsPage() {
         <p className={styles.mainText}>Please select one of the options below to take the test.</p>
       </div>
       <div className={styles.links}>
-        <div className={styles.link}>Driving rules</div>
-        <div className={styles.link}>Driving signs</div>
-        <div className={styles.link}>Random questions</div>
-
+        <ToggleBlock title='Driving rules' />
+        <ToggleBlock title='Driving signs' />
+        <ToggleBlock title='Random questions' />
       </div>
     </section>
   );
