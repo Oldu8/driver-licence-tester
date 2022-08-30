@@ -1,21 +1,19 @@
 .container {
+  transition: 0.5s;
   background-color: rgb(198, 221, 255);
   border: 1px solid black;
   min-width: 300px;
   border-radius: 15px;
-  padding: 1rem;
-  font-weight: 500;
-  font-size: 20px;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 19px;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-bottom: 1rem;
   position: relative;
+  margin-bottom: 10px;
   &:hover {
     outline: 3px solid rgb(146, 49, 49);
-  }
-  &:last-child {
-    margin-bottom: 0;
   }
   &::after {
     content: "";
@@ -30,6 +28,6 @@
 }
 
 .listOfTests {
-  margin: 0;
-  list-style-type: none;
+  transform: scale(1);
+  transition: 0.5s;
 }

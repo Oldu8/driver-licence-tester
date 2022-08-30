@@ -1,5 +1,5 @@
 .homePage {
-  //   background-color: whitesmoke;
+  min-height: 80vh;
 }
 
 .imageContainer {
@@ -8,29 +8,29 @@
 }
 
 .img {
-  max-width: 400px;
+  max-width: 300px;
   align-self: center;
 }
 
 .headline {
   text-align: center;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 500;
-  padding: 1.5rem 0;
+  padding: 15px 0;
 }
 
 .mainText {
   width: 50%;
   text-align: center;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 300;
-  margin: 10px auto;
+  margin: 25px auto;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
+  padding: 20px 0;
   align-items: center;
   justify-content: space-around;
 }
