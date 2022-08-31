@@ -38,7 +38,7 @@ function ToggleBlock({ title }) {
         <AccordionDetails>
           {expanded ? <ul className={styles.listOfTests}>
             {testArr.map((item) => {
-              return <TestBlock title={item.title} number={item.number} url={item.url} />
+              return <TestBlock title={item.title} number={item.number} url={item.url} key={item.number} />
             })}
           </ul> : false}
         </AccordionDetails>

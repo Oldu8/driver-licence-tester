@@ -17,7 +17,7 @@ function TestBlock({ title, number, url }) {
         <p className={styles.quentity}>30 questions</p>
         <p className={styles.status}>Not started</p>
       </div>
-      <Button sx={btnStyle} href={url}>Start</Button>
+      <Button sx={btnStyle} href='/tests/quiz'>Start</Button>
     </li>
 
   );
