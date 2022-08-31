@@ -1,17 +1,23 @@
 import styles from './TestBlock.module.scss';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 function TestBlock({ title, number, url }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const btnStyle = {
+    color: 'white',
+    border: '2px solid rgb(3, 0, 8);',
+    backgroundColor: 'rgb(237, 166, 35)',
+    fontWeight: 600,
+    padding: "10px",
+    borderRadius: "15px"
+  }
   return (
     <li className={styles.container}>
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.quentity}>30 questions</p>
-        <input className={styles.status} type='checkbox'></input>
+        <p className={styles.status}>Not started</p>
       </div>
-      <div className={styles.button}><Link to={url}>Start</Link></div>
+      <Button sx={btnStyle} href={url}>Start</Button>
     </li>
 
   );
