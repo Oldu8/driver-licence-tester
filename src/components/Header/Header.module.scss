@@ -13,26 +13,6 @@
   flex-direction: row;
 }
 
-.navLink {
-  background-color: rgb(198, 221, 255);
-  border: 1px solid black;
-  min-width: 160px;
-  border-radius: 12px;
-  padding: 8px;
-  font-weight: 500;
-  font-size: 1.2vw;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  margin-right: 1rem;
-  &:hover {
-    outline: 3px solid rgb(146, 49, 49);
-  }
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .img {
   width: 57px;
   height: 47px;

@@ -1,5 +1,4 @@
 .container {
-  transition: 0.5s;
   background-color: rgb(198, 221, 255);
   border: 1px solid black;
   min-width: 300px;
@@ -27,7 +26,5 @@
   }
 }
 
-.listOfTests {
-  transform: scale(1);
-  transition: 0.5s;
-}
+// .listOfTests {
+// }

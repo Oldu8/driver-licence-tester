@@ -1,29 +1,35 @@
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
 import canadaFlag from "../../assets/logos/canadaFlag.svg"
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 function Header() {
+  const buttonSettings = {
+    color: 'white',
+    border: '1px solid white',
+    fontWeight: 700,
+    marginRight: "15px",
+    padding: "7px 10px",
+    minWidth: "150px"
+  }
+
   return (
     <div className={styles.header}>
       <div className={styles.listOfLinks}>
-
-        <div className={styles.leftLinks}>
-          {/* <div className={styles.navLink}>
-            <img src={canadaFlag} className={styles.img} alt='Canada flag'></img>
-          </div> */}
-          <nav className={styles.navLink}><Link to='/'>Main Page</Link></nav>
-          <nav className={styles.navLink}><Link to='/tests'>Tests</Link></nav>
-          <nav className={styles.navLink}><Link to='/rules'>Rules</Link></nav>
-          <nav className={styles.navLink}><Link to='/result'>Result</Link></nav>
-        </div>
+        <Stack direction="row">
+          <Button sx={buttonSettings} href='/'>Home</Button >
+          <Button sx={buttonSettings} href='/tests'>Tests</Button >
+          <Button sx={buttonSettings} href='/rules'>Rules</Button >
+          <Button sx={buttonSettings} href='/result'>Result</Button >
+        </Stack >
         <div className={styles.cabinetBlock}>
-          <nav className={styles.navLink}>
+          <Button sx={buttonSettings}>
             <Link to='/cabinet'>To your cabinet</Link>
-          </nav>
+          </Button>
         </div>
       </div>
-
-    </div>
+    </div >
   );
 }
 
