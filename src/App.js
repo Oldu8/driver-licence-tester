@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -10,6 +10,15 @@ import QuizPage from './components/QuizPage/QuizPage';
 
 function App() {
   const [userName, setUserName] = useState('');
+  const [score, setScore] = useState('')
+  const [category, setCategory] = useState('')
+  const [testNumber, setTestNumber] = useState('')
+
+  // useEffect(() => {
+  //   console.log(category);
+  //   console.log(testNumber)
+  // }, [category])
+
 
 
   return (
@@ -21,8 +30,10 @@ function App() {
             <Route exact path='/' element={<HomePage />}></Route>
             <Route path='/cabinet' element={<div>cabinet page</div>}></Route>
             <Route path='/result' element={<div>result page</div>}></Route>
-            <Route path='/tests/quiz' element={<QuizPage userName={userName} setUserName={setUserName} />}></Route>
-            <Route path='/tests' element={<TestsPage />}></Route>
+            <Route path='/quiz' element={<QuizPage userName={userName} setUserName={setUserName}
+            // category={category} testNumber={testNumber}
+            />}></Route>
+            <Route path='/tests' element={<TestsPage setCategory={setCategory} setTestNumber={setTestNumber} />}></Route>
           </Routes>
         </div>
       </section>

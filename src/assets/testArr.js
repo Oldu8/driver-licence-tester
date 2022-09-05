@@ -5,10 +5,7 @@ import ds_t1_q4 from "./testsImg/ds_t1_q4.png"
 import ds_t1_q5 from "./testsImg/ds_t1_q5.png"
 
 import dr_t1_q2 from "./testsImg/dr_t1_q2.png"
-
-
-
-const testsArr = {
+export const testsArr = {
     drivingRules: {
         test1: [
             {
@@ -78,7 +75,7 @@ const testsArr = {
         test4: {},
         test5: {}
     },
-    drivingSigng: {
+    drivingSigns: {
         test1: [
             {
                 question: "What does this sign mean ?",

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ToggleBlock from '../ToggleBlock/ToggleBlock';
 import testBanner from "../../assets/images/testBanner.svg"
 
-function TestsPage() {
+function TestsPage({ setCategory, setTestNumber }) {
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>
@@ -14,9 +14,9 @@ function TestsPage() {
         <p className={styles.mainText}>Please select one of the options below to take the test.</p>
       </div>
       <div className={styles.links}>
-        <ToggleBlock title='Driving rules' />
-        <ToggleBlock title='Driving signs' />
-        <ToggleBlock title='Random questions' />
+        <ToggleBlock title='Driving rules' category='drivingRules' setCategory={setCategory} setTestNumber={setTestNumber} />
+        <ToggleBlock title='Driving signs' category='drivingSigns' setCategory={setCategory} setTestNumber={setTestNumber} />
+        <ToggleBlock title='Random questions' category='random' setCategory={setCategory} setTestNumber={setTestNumber} />
       </div>
     </section>
   );

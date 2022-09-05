@@ -16,7 +16,7 @@ const testArr = [
   { title: 'Test 5', number: 5, url: '/tests/test5' }
 ]
 
-function ToggleBlock({ title }) {
+function ToggleBlock({ title, category, setCategory, setTestNumber }) {
   const [expanded, setExpanded] = useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -38,7 +38,7 @@ function ToggleBlock({ title }) {
         <AccordionDetails>
           {expanded ? <ul className={styles.listOfTests}>
             {testArr.map((item) => {
-              return <TestBlock title={item.title} number={item.number} url={item.url} key={item.number} />
+              return <TestBlock title={item.title} number={item.number} key={item.number} category={category} setCategory={setCategory} setTestNumber={setTestNumber} />
             })}
           </ul> : false}
         </AccordionDetails>

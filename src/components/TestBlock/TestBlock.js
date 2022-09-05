@@ -1,7 +1,12 @@
 import styles from './TestBlock.module.scss';
 import Button from '@mui/material/Button';
 
-function TestBlock({ title, number, url }) {
+function TestBlock({ title, number, category, setCategory, setTestNumber }) {
+
+  const handleClick = (category, number, setCategory, setTestNumber) => {
+    setCategory(category);
+    setTestNumber(number);
+  }
   const btnStyle = {
     color: 'white',
     border: '2px solid rgb(3, 0, 8);',
@@ -17,7 +22,7 @@ function TestBlock({ title, number, url }) {
         <p className={styles.quentity}>30 questions</p>
         <p className={styles.status}>Not started</p>
       </div>
-      <Button sx={btnStyle} href='/tests/quiz'>Start</Button>
+      <Button sx={btnStyle} href='/quiz' onClick={() => handleClick(category, number, setCategory, setTestNumber)}>Start</Button>
     </li>
 
   );
