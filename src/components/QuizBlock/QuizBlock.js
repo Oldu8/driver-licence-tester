@@ -1,23 +1,50 @@
 import styles from './QuizBlock.module.scss';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import classNames from 'classnames';
+import Button from '@mui/material/Button';
 
-function QuizBlock({ arr }) {
+function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correct, setScoreCorrect, setScoreWrong, scoreCorrect, scoreWrong }) {
+  const [selected, setSelected] = useState()
+  const [checked, setChecked] = useState(false)
+
+  const checkAnswer = () => {
+    { selected === correct ? setScoreCorrect(scoreCorrect + 1) : setScoreWrong(scoreWrong + 1) }
+    setChecked(true);
+  }
+  const nextQuestion = () => {
+    setChecked(false);
+    setSelected();
+    setCurrentQuestion(currentQuestion + 1)
+  }
+
   return (
-    <section className={styles.content}>
-      <div>
-        Progress: 0%
-        <p>Question 1 out of 30</p>
+    <div className={styles.quizBox}>
+      <h2 className={styles.title}>Question {currentQuestion + 1}</h2>
+      <div className={styles.box}>
+        <h4 className={styles.question}>{quizArr[currentQuestion].question}</h4>
+        <div className={styles.options}>
+          {options.map((i) => {
+            return <button
+              className={classNames(styles.option, {
+                [styles.selectedOption]: selected === i,
+                [styles.correct]: selected === i && checked && i === correct,
+                [styles.inCorrect]: selected === i && checked && i !== correct,
+                [styles.disabledCorrect]: selected !== i && checked && i === correct,
+                [styles.disabledWrong]: selected !== i && checked && i !== correct,
+              })}
+              key={i}
+              onClick={() => setSelected(i)}
+            >{i}</button>
+          })}
+        </div>
       </div>
-      <div className={styles.quizBox}>
-        <h3 className={styles.title}>Question</h3>
-        <ul className={styles.optionsBox}>
-          <li className={styles.option}>1</li>
-          <li className={styles.option}>2</li>
-          <li className={styles.option}>3</li>
-          <li className={styles.option}>4</li>
-        </ul>
+      <div className={styles.buttonsBlock}>
+        {checked ?
+          <Button color="secondary" variant="contained" size="large" onClick={() => nextQuestion()}>Next question</Button>
+          :
+          <Button color="primary" variant="contained" size="large" onClick={() => checkAnswer()}>Check answer!</Button>}
       </div>
-    </section>
+    </div>
   );
 }
 

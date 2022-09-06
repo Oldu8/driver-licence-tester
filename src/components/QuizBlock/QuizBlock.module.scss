@@ -1,4 +1,66 @@
-.footer {
-  margin: 0 auto;
-  padding: 1.5rem;
+.quizBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 30px;
+  align-items: center;
+}
+
+.box {
+  background-color: rgba(159, 151, 151, 0.258);
+  border-radius: 25px;
+  min-height: 50vh;
+  width: 60vw;
+  // margin: 10px 35px 30px 35px;
+  padding: 15px;
+}
+
+.question {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 23px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.option {
+  min-height: 35px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 7px 0;
+  background-color: rgb(255, 255, 255);
+  text-align: start;
+  padding: 2px 0 2px 15px;
+}
+
+.selectedOption {
+  font-weight: bold;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.63);
+}
+
+.correct {
+  background-color: rgb(9, 205, 9);
+  color: white;
+}
+.inCorrect {
+  background-color: red;
+}
+.disabledCorrect {
+  background-color: rgb(136, 199, 136);
+}
+
+.disabledWrong {
+  background-color: rgb(215, 140, 140);
+}
+
+.buttonsBlock {
+  margin: 35px auto 0 auto;
 }

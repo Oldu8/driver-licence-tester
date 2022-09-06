@@ -3,17 +3,38 @@ import { Link } from 'react-router-dom';
 import quizbanner from '../../assets/images/quizBanner.svg'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { testsArr } from "../../assets/testArr.js"
 import QuizBlock from '../QuizBlock/QuizBlock';
+import { CircularProgress } from '@mui/material';
+
 
 function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber = 1 }) {
+  const quizArr = testsArr[category]['test' + testNumber];
+
   const [error, setError] = useState(false)
   const [quiezStarted, setQuiezStarted] = useState(false)
 
-  console.log(testNumber);
-  console.log(category)
-  const quizArr = testsArr[category]['test' + testNumber];
+  const [options, setOptions] = useState();
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [scoreCorrect, setScoreCorrect] = useState(0);
+  const [scoreWrong, setScoreWrong] = useState(0);
+
+
+  const handleShuffle = (answers) => {
+    return answers.sort(() => Math.random() - 0.5)
+  }
+
+  useEffect(() => {
+    setOptions(
+      quizArr &&
+      handleShuffle([
+        quizArr[currentQuestion]?.correct_answer,
+        ...quizArr[currentQuestion]?.incorrect_answers
+      ])
+    )
+  }, [currentQuestion])
+
 
   const handleSubmit = () => {
     userName.length < 3 ?
@@ -26,10 +47,9 @@ function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber
     width: '300px'
   }
 
+
   return (
     <div className={styles.container}>
-      <p>cat{category}</p>
-      <p>numb {testNumber}</p>
       {!quiezStarted ?
         <>
           <div className={styles.content}>
@@ -46,11 +66,38 @@ function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber
           </div>
         </>
         :
-        <QuizBlock
-        // arr={quizArr} 
-        />
+        <div>
+          <h5 className={styles.welcomeHeadline}>Welcome, {userName}</h5>
+          {
+            quizArr ?
+              <section className={styles.content}>
+                <div className={styles.info}>
+                  <p className={styles.category}>Cateogory is {category}</p>
+                  <p className={styles.score}>Correct - {scoreCorrect}</p>
+                  <p className={styles.score}>Inccorect - {scoreWrong}</p>
+                  <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>
+                </div>
+                {currentQuestion > quizArr.length ?
+                  <Button color="success" variant="contained" size="large">Show me result!</Button>
+                  :
+                  <QuizBlock
+                    currentQuestion={currentQuestion}
+                    setCurrentQuestion={setCurrentQuestion}
+                    options={options}
+                    quizArr={quizArr}
+                    correct={quizArr[currentQuestion]?.correct_answer}
+                    scoreCorrect={scoreCorrect}
+                    scoreWrong={scoreWrong}
+                    setScoreCorrect={setScoreCorrect}
+                    setScoreWrong={setScoreWrong}
+                  />
+                }
+              </section>
+              :
+              <CircularProgress />
+          }
+        </div>
       }
-
     </div>
   );
 }
