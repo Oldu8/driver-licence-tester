@@ -1,6 +1,7 @@
 import styles from './QuizPage.module.scss';
 import { Link } from 'react-router-dom';
 import quizbanner from '../../assets/images/quizBanner.svg'
+import resultQuizBanner from '../../assets/images/resultQuizBanner.svg'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useState, useEffect } from 'react';
@@ -26,13 +27,15 @@ function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber
   }
 
   useEffect(() => {
-    setOptions(
-      quizArr &&
-      handleShuffle([
-        quizArr[currentQuestion]?.correct_answer,
-        ...quizArr[currentQuestion]?.incorrect_answers
-      ])
-    )
+    if (currentQuestion < quizArr.length) {
+      setOptions(
+        quizArr &&
+        handleShuffle([
+          quizArr[currentQuestion]?.correct_answer,
+          ...quizArr[currentQuestion]?.incorrect_answers
+        ])
+      )
+    }
   }, [currentQuestion])
 
 
@@ -69,17 +72,25 @@ function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber
         <div>
           <h5 className={styles.welcomeHeadline}>Welcome, {userName}</h5>
           {
-            quizArr ?
-              <section className={styles.content}>
-                <div className={styles.info}>
-                  <p className={styles.category}>Cateogory is {category}</p>
-                  <p className={styles.score}>Correct - {scoreCorrect}</p>
-                  <p className={styles.score}>Inccorect - {scoreWrong}</p>
-                  <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>
+            quizArr ? <>
+              {currentQuestion === quizArr.length ?
+                <div className={styles.resultBox}>
+                  <h4 className={styles.resultTitle}>You finished the test!</h4>
+                  <div className={styles.imageContainer}>
+                    <img src={resultQuizBanner} className={styles.img} alt='quiz banner'></img>
+                  </div>
+                  <Button color="success" variant="contained" size="large"
+                    // href='/result'
+                    sx={{ marginTop: "40px" }}>Show me result!</Button>
                 </div>
-                {currentQuestion > quizArr.length ?
-                  <Button color="success" variant="contained" size="large">Show me result!</Button>
-                  :
+                :
+                <section className={styles.content}>
+                  <div className={styles.info}>
+                    <p className={styles.category}>Cateogory is {category}</p>
+                    <p className={styles.score}>Correct - {scoreCorrect}</p>
+                    <p className={styles.score}>Inccorect - {scoreWrong}</p>
+                    <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>
+                  </div>
                   <QuizBlock
                     currentQuestion={currentQuestion}
                     setCurrentQuestion={setCurrentQuestion}
@@ -91,8 +102,10 @@ function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber
                     setScoreCorrect={setScoreCorrect}
                     setScoreWrong={setScoreWrong}
                   />
-                }
-              </section>
+
+                </section>
+              }
+            </>
               :
               <CircularProgress />
           }
