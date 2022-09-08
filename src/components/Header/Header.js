@@ -22,12 +22,8 @@ function Header() {
           <Button sx={buttonSettings} href='/tests'>Tests</Button >
           <Button sx={buttonSettings} href='/rules'>Rules</Button >
           <Button sx={buttonSettings} href='/result'>Result</Button >
+          <Button sx={buttonSettings} href='/info'>General Info</Button >
         </Stack >
-        <div className={styles.cabinetBlock}>
-          <Button sx={buttonSettings}>
-            <Link to='/cabinet'>To your cabinet</Link>
-          </Button>
-        </div>
       </div>
     </div >
   );

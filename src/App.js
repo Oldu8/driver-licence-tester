@@ -7,6 +7,7 @@ import HomePage from './components/HomePage/HomePage';
 import TestsPage from './components/TestsPage/TestsPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import QuizPage from './components/QuizPage/QuizPage';
+import InfoPage from './components/InfoPage/InfoPage';
 
 function App() {
   const [userName, setUserName] = useState('');
@@ -34,6 +35,7 @@ function App() {
             // category={category} testNumber={testNumber}
             />}></Route>
             <Route path='/tests' element={<TestsPage setCategory={setCategory} setTestNumber={setTestNumber} />}></Route>
+            <Route path='/info' element={<InfoPage />}></Route>
           </Routes>
         </div>
       </section>

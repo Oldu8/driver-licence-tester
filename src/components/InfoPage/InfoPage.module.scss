@@ -1,0 +1,37 @@
+.content {
+  min-height: 100vh;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.subtitle {
+  width: 60%;
+  font-weight: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.text {
+  margin: 15px 0;
+}
+
+.externalLink {
+  color: blue;
+  border-bottom: 1px solid blue;
+  padding: 1px;
+}
+
+.unOrderList {
+  list-style-type: none;
+}
