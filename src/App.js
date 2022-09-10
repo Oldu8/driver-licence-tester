@@ -15,13 +15,6 @@ function App() {
   const [category, setCategory] = useState('')
   const [testNumber, setTestNumber] = useState('')
 
-  // useEffect(() => {
-  //   console.log(category);
-  //   console.log(testNumber)
-  // }, [category])
-
-
-
   return (
     <BrowserRouter>
       <section className="main">
@@ -31,6 +24,7 @@ function App() {
             <Route exact path='/' element={<HomePage />}></Route>
             <Route path='/cabinet' element={<div>cabinet page</div>}></Route>
             <Route path='/result' element={<div>result page</div>}></Route>
+            <Route path='/rules' element={<div>rules page</div>}></Route>
             <Route path='/quiz' element={<QuizPage userName={userName} setUserName={setUserName}
             // category={category} testNumber={testNumber}
             />}></Route>

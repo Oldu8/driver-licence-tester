@@ -1,6 +1,4 @@
 import styles from './Header.module.scss';
-import { Link } from 'react-router-dom';
-import canadaFlag from "../../assets/logos/canadaFlag.svg"
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
