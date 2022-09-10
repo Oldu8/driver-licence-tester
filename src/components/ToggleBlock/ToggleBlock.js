@@ -7,16 +7,14 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-const testArr = [
-  { title: 'Test 1', number: 1, url: '/tests/test1' },
-  { title: 'Test 2', number: 2, url: '/tests/test2' },
-  { title: 'Test 3', number: 3, url: '/tests/test3' },
-  { title: 'Test 4', number: 4, url: '/tests/test4' },
-  { title: 'Test 5', number: 5, url: '/tests/test5' }
-]
+import { useSelector, useDispatch } from 'react-redux'
 
 function ToggleBlock({ title, category, setCategory, setTestNumber }) {
+
+  const arrayWithTests = useSelector((state) => Object.keys(state.testArr[category]))
+  console.log(arrayWithTests)
+
+
   const [expanded, setExpanded] = useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -37,8 +35,8 @@ function ToggleBlock({ title, category, setCategory, setTestNumber }) {
         </AccordionSummary>
         <AccordionDetails>
           {expanded ? <ul className={styles.listOfTests}>
-            {testArr.map((item) => {
-              return <TestBlock title={item.title} number={item.number} key={item.number} category={category} setCategory={setCategory} setTestNumber={setTestNumber} />
+            {arrayWithTests.map((item, index) => {
+              return <TestBlock title={item} number={index + 1} key={item} category={category} setCategory={setCategory} setTestNumber={setTestNumber} />
             })}
           </ul> : false}
         </AccordionDetails>

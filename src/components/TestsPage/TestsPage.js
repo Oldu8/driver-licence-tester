@@ -16,7 +16,7 @@ function TestsPage({ setCategory, setTestNumber }) {
       <div className={styles.links}>
         <ToggleBlock title='Driving rules' category='drivingRules' setCategory={setCategory} setTestNumber={setTestNumber} />
         <ToggleBlock title='Driving signs' category='drivingSigns' setCategory={setCategory} setTestNumber={setTestNumber} />
-        <ToggleBlock title='Random questions' category='random' setCategory={setCategory} setTestNumber={setTestNumber} />
+        {/* <ToggleBlock title='Random questions' category='random' setCategory={setCategory} setTestNumber={setTestNumber} /> */}
       </div>
     </section>
   );
