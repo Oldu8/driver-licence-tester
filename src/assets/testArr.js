@@ -138,3 +138,62 @@ export const testsArr = {
         test5: {}
     }
 }
+
+const initialState = {
+    tests: {
+        drivingRules: {
+            test1: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test2: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test3: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test4: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test5: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+        },
+        drivingSigns: {
+            test1: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test2: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test3: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test4: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+            test5: {
+                status: 'Not started',
+                correct: 0,
+                incorrect: 0,
+            },
+        }
+    }
+}

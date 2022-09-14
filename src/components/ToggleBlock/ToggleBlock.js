@@ -12,7 +12,7 @@ import { useSelector, useDispatch } from 'react-redux'
 function ToggleBlock({ title, category, setCategory, setTestNumber }) {
 
   const arrayWithTests = useSelector((state) => Object.keys(state.testArr[category]))
-  console.log(arrayWithTests)
+  // console.log(arrayWithTests)
 
 
   const [expanded, setExpanded] = useState(false);
