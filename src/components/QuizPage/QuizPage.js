@@ -8,10 +8,13 @@ import { useState, useEffect } from 'react';
 import { testsArr } from "../../assets/testArr.js"
 import QuizBlock from '../QuizBlock/QuizBlock';
 import { CircularProgress } from '@mui/material';
+import { useSelector, useDispatch } from 'react-redux'
+
 
 
 function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber = 1 }) {
   const quizArr = testsArr[category]['test' + testNumber];
+  const stateResult = useSelector((state) => state.testsData)
 
   const [error, setError] = useState(false)
   const [quiezStarted, setQuiezStarted] = useState(false)
@@ -27,6 +30,7 @@ function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber
   }
 
   useEffect(() => {
+    console.log(stateResult)
     if (currentQuestion < quizArr.length) {
       setOptions(
         quizArr &&

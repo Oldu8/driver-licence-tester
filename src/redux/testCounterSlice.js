@@ -5,7 +5,7 @@ import { current } from '@reduxjs/toolkit'
 const testCounterSlice = createSlice({
     name: "results",
     initialState: {
-        tests: {
+        testsData: {
             drivingRules: {
                 test1: {
                     status: 'Not started',
@@ -66,16 +66,16 @@ const testCounterSlice = createSlice({
         setStatus: (state, action) => {
             const { category, number } = action.payload
             const testNumber = 'test' + number;
-            const currentState = current(state.tests);
+            const currentState = current(state.testsData);
             let currStatus = currentState[category][testNumber].status;
             let currInCorrect = currentState[category][testNumber].incorrect
             if (currStatus === 'Not started') {
-                state.tests[category][testNumber].status = 'Started'
+                state.testsData[category][testNumber].status = 'Started'
             }
             else if (currStatus === 'Started' && currInCorrect < 5) {
-                state.tests[category][testNumber].status = 'Successfully'
+                state.testsData[category][testNumber].status = 'Successfully'
             } else if (currentState === 'Started' && currInCorrect > 4) {
-                state.tests[category][testNumber].status = 'Failed'
+                state.testsData[category][testNumber].status = 'Failed'
             }
         },
         setScore(state, action) {
