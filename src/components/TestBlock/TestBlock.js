@@ -5,8 +5,7 @@ import { setStatus } from '../../redux/testCounterSlice'
 
 
 function TestBlock({ title, number, category, setCategory, setTestNumber }) {
-
-  const state = useSelector((state) => state.testsData.tests)
+  const state = useSelector((state) => state.userData.testsData)
   const dispatch = useDispatch()
 
   const handleClick = (category, number, setCategory, setTestNumber) => {

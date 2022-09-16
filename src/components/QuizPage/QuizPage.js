@@ -12,9 +12,10 @@ import { useSelector, useDispatch } from 'react-redux'
 
 
 
-function QuizPage({ userName, setUserName, category = 'drivingRules', testNumber = 1 }) {
-  const quizArr = testsArr[category]['test' + testNumber];
-  const stateResult = useSelector((state) => state.testsData)
+function QuizPage({ userName, setUserName }) {
+  const stateResult = useSelector((state) => state.userData.testsData)
+  const { testNumber, category } = stateResult?.currentTest;
+  const quizArr = testsArr[category][testNumber];
 
   const [error, setError] = useState(false)
   const [quiezStarted, setQuiezStarted] = useState(false)

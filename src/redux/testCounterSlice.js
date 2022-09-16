@@ -71,6 +71,8 @@ const testCounterSlice = createSlice({
             let currInCorrect = currentState[category][testNumber].incorrect
             if (currStatus === 'Not started') {
                 state.testsData[category][testNumber].status = 'Started'
+                state.testsData.currentTest = { testNumber, category }
+
             }
             else if (currStatus === 'Started' && currInCorrect < 5) {
                 state.testsData[category][testNumber].status = 'Successfully'
