@@ -109,11 +109,7 @@ function QuizPage() {
                     options={options}
                     quizArr={quizArr}
                     correctAns={quizArr[currentQuestion]?.correct_answer}
-
-                    correct={scoreCorrect}
-                    incorrect={scoreWrong}
                   />
-
                 </section>
               }
             </>

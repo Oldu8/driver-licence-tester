@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from 'react-redux'
 import { scoreInc, scoreDec } from "../../redux/testCounterSlice"
 
-function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns, scoreCorrect, scoreWrong }) {
+function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns }) {
   const dispatch = useDispatch()
 
   const [selected, setSelected] = useState()
