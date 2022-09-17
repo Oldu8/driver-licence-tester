@@ -11,17 +11,24 @@ import { CircularProgress } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux'
 
 
-
-function QuizPage({ userName, setUserName }) {
+function QuizPage() {
   const stateResult = useSelector((state) => state.userData.testsData)
   const { testNumber, category } = stateResult?.currentTest;
   const quizArr = testsArr[category][testNumber];
 
+  const { correct, incorrect } = stateResult[category][testNumber]
+
+
+  // Local states to start quiz
   const [error, setError] = useState(false)
   const [quiezStarted, setQuiezStarted] = useState(false)
 
+  // Local states to render questions
   const [options, setOptions] = useState();
   const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  //States that should push date to redux
+  const [userName, setUserName] = useState(''); // pohuy
   const [scoreCorrect, setScoreCorrect] = useState(0);
   const [scoreWrong, setScoreWrong] = useState(0);
 
@@ -92,8 +99,8 @@ function QuizPage({ userName, setUserName }) {
                 <section className={styles.content}>
                   <div className={styles.info}>
                     <p className={styles.category}>Cateogory is {category}</p>
-                    <p className={styles.score}>Correct - {scoreCorrect}</p>
-                    <p className={styles.score}>Inccorect - {scoreWrong}</p>
+                    <p className={styles.score}>Correct - {correct}</p>
+                    <p className={styles.score}>Inccorect - {incorrect}</p>
                     <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>
                   </div>
                   <QuizBlock
@@ -101,11 +108,10 @@ function QuizPage({ userName, setUserName }) {
                     setCurrentQuestion={setCurrentQuestion}
                     options={options}
                     quizArr={quizArr}
-                    correct={quizArr[currentQuestion]?.correct_answer}
-                    scoreCorrect={scoreCorrect}
-                    scoreWrong={scoreWrong}
-                    setScoreCorrect={setScoreCorrect}
-                    setScoreWrong={setScoreWrong}
+                    correctAns={quizArr[currentQuestion]?.correct_answer}
+
+                    correct={scoreCorrect}
+                    incorrect={scoreWrong}
                   />
 
                 </section>

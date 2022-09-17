@@ -2,13 +2,17 @@ import styles from './QuizBlock.module.scss';
 import { useState } from 'react';
 import classNames from 'classnames';
 import Button from '@mui/material/Button';
+import { useSelector, useDispatch } from 'react-redux'
+import { scoreInc, scoreDec } from "../../redux/testCounterSlice"
 
-function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correct, setScoreCorrect, setScoreWrong, scoreCorrect, scoreWrong }) {
+function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns, scoreCorrect, scoreWrong }) {
+  const dispatch = useDispatch()
+
   const [selected, setSelected] = useState()
   const [checked, setChecked] = useState(false)
 
   const checkAnswer = () => {
-    { selected === correct ? setScoreCorrect(scoreCorrect + 1) : setScoreWrong(scoreWrong + 1) }
+    { selected === correctAns ? dispatch(scoreInc()) : dispatch(scoreDec()) }
     setChecked(true);
   }
   const nextQuestion = () => {
@@ -27,10 +31,10 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
             return <button
               className={classNames(styles.option, {
                 [styles.selectedOption]: selected === i,
-                [styles.correct]: selected === i && checked && i === correct,
-                [styles.inCorrect]: selected === i && checked && i !== correct,
-                [styles.disabledCorrect]: selected !== i && checked && i === correct,
-                [styles.disabledWrong]: selected !== i && checked && i !== correct,
+                [styles.correct]: selected === i && checked && i === correctAns,
+                [styles.inCorrect]: selected === i && checked && i !== correctAns,
+                [styles.disabledCorrect]: selected !== i && checked && i === correctAns,
+                [styles.disabledWrong]: selected !== i && checked && i !== correctAns,
               })}
               key={i}
               onClick={() => setSelected(i)}

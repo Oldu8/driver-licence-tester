@@ -10,7 +10,6 @@ import QuizPage from './components/QuizPage/QuizPage';
 import InfoPage from './components/InfoPage/InfoPage';
 
 function App() {
-  const [userName, setUserName] = useState('');
   const [score, setScore] = useState('')
   const [category, setCategory] = useState('')
   const [testNumber, setTestNumber] = useState('')
@@ -25,9 +24,7 @@ function App() {
             <Route path='/cabinet' element={<div>cabinet page</div>}></Route>
             <Route path='/result' element={<div>result page</div>}></Route>
             <Route path='/rules' element={<div>rules page</div>}></Route>
-            <Route path='/quiz' element={<QuizPage userName={userName} setUserName={setUserName}
-            // category={category} testNumber={testNumber}
-            />}></Route>
+            <Route path='/quiz' element={<QuizPage />}></Route>
             <Route path='/tests' element={<TestsPage setCategory={setCategory} setTestNumber={setTestNumber} />}></Route>
             <Route path='/info' element={<InfoPage />}></Route>
           </Routes>

@@ -80,11 +80,16 @@ const testCounterSlice = createSlice({
                 state.testsData[category][testNumber].status = 'Failed'
             }
         },
-        setScore(state, action) {
-
+        scoreInc(state, action) {
+            const { category, testNumber } = current(state.testsData.currentTest)
+            state.testsData[category][testNumber].correct += 1;
+        },
+        scoreDec(state, action) {
+            const { category, testNumber } = current(state.testsData.currentTest)
+            state.testsData[category][testNumber].incorrect += 1;
         }
     },
 })
 
-export const { setStatus, setScore } = testCounterSlice.actions;
+export const { setStatus, scoreInc, scoreDec } = testCounterSlice.actions;
 export default testCounterSlice.reducer

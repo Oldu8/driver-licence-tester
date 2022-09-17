@@ -194,7 +194,7 @@ export const testsArr = {
                 correct_answer: 'giving the proper signal and looking to make sure that the lane change can be performed safety'
             },
             {
-                question: "What shoud you do whe the driver of another vehicle signals that he or she intends to pass your vehicle?",
+                question: "What shoud you do when the driver of another vehicle signals that he or she intends to pass your vehicle?",
                 incorrect_answers: [
                     "Signal to other driver to remain behind you",
                     "Move to the left to block the passing vehicle ",
