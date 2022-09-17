@@ -6,6 +6,9 @@ import { setStatus } from '../../redux/testCounterSlice'
 
 function TestBlock({ title, number, category, setCategory, setTestNumber }) {
   const state = useSelector((state) => state.userData.testsData)
+  const stateTests = useSelector((state) => state.testArr)
+  const testNumber = 'test' + number
+
   const dispatch = useDispatch()
 
   const handleClick = (category, number, setCategory, setTestNumber) => {
@@ -25,7 +28,7 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
     <li className={styles.container}>
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.quentity}>20 questions</p>
+        <p className={styles.quentity}>{stateTests[category][testNumber].length + ' questions'}</p>
         <p className={styles.status}>{state[category]['test' + number].status}</p>
       </div>
       <Button sx={btnStyle}

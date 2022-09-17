@@ -28,9 +28,7 @@ function QuizPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   //States that should push date to redux
-  const [userName, setUserName] = useState(''); // pohuy
-  const [scoreCorrect, setScoreCorrect] = useState(0);
-  const [scoreWrong, setScoreWrong] = useState(0);
+  const [userName, setUserName] = useState('');
 
 
   const handleShuffle = (answers) => {
