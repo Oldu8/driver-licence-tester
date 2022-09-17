@@ -3,7 +3,7 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from 'react-redux'
-import { scoreInc, scoreDec } from "../../redux/testCounterSlice"
+import { setScore } from "../../redux/testCounterSlice"
 
 function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns }) {
   const dispatch = useDispatch()
@@ -12,7 +12,7 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
   const [checked, setChecked] = useState(false)
 
   const checkAnswer = () => {
-    { selected === correctAns ? dispatch(scoreInc()) : dispatch(scoreDec()) }
+    { selected === correctAns ? dispatch(setScore('inc')) : dispatch(setScore('dec')) }
     setChecked(true);
   }
   const nextQuestion = () => {

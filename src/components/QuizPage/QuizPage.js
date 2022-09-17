@@ -38,7 +38,6 @@ function QuizPage() {
   }
 
   useEffect(() => {
-    console.log(stateResult)
     if (currentQuestion < quizArr.length) {
       setOptions(
         quizArr &&

@@ -80,16 +80,12 @@ const testCounterSlice = createSlice({
                 state.testsData[category][testNumber].status = 'Failed'
             }
         },
-        scoreInc(state, action) {
+        setScore(state, action) {
             const { category, testNumber } = current(state.testsData.currentTest)
-            state.testsData[category][testNumber].correct += 1;
-        },
-        scoreDec(state, action) {
-            const { category, testNumber } = current(state.testsData.currentTest)
-            state.testsData[category][testNumber].incorrect += 1;
+            { action.payload === "inc" ? state.testsData[category][testNumber].correct += 1 : state.testsData[category][testNumber].incorrect += 1; }
         }
     },
 })
 
-export const { setStatus, scoreInc, scoreDec } = testCounterSlice.actions;
+export const { setStatus, setScore } = testCounterSlice.actions;
 export default testCounterSlice.reducer
