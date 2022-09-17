@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useSelector, useDispatch } from 'react-redux'
 
-function ToggleBlock({ title, category, setCategory, setTestNumber }) {
+function ToggleBlock({ title, category }) {
 
   const arrayWithTests = useSelector((state) => Object.keys(state.testArr[category]))
 
@@ -34,7 +34,7 @@ function ToggleBlock({ title, category, setCategory, setTestNumber }) {
         <AccordionDetails>
           {expanded ? <ul className={styles.listOfTests}>
             {arrayWithTests.map((item, index) => {
-              return <TestBlock title={item} number={index + 1} key={item} category={category} setCategory={setCategory} setTestNumber={setTestNumber} />
+              return <TestBlock title={item} number={index + 1} key={item} category={category} />
             })}
           </ul> : false}
         </AccordionDetails>

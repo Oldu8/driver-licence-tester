@@ -11,7 +11,7 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
 
   const dispatch = useDispatch()
 
-  const handleClick = (category, number, setCategory, setTestNumber) => {
+  const handleClick = (category, number) => {
     dispatch(setStatus({ number, category }))
     setCategory(category);
     setTestNumber(number);
@@ -33,7 +33,7 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
       </div>
       <Button sx={btnStyle}
         href='/quiz'
-        onClick={() => handleClick(category, number, setCategory, setTestNumber)}>Start</Button>
+        onClick={() => handleClick(category, number)}>Start</Button>
     </li>
 
   );
