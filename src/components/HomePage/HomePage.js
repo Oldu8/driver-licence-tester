@@ -14,8 +14,8 @@ const HomePage = () => {
                 <p className={styles.mainText}>Here you can find all rules and tests that can help you to prepare for government exams. You can learn rules and then practice or you can start practicing in all themes at once</p>
             </div>
             <div className={styles.links}>
-                <span className={styles.link}><Link to='/rules'>Rules</Link></span>
-                <span className={styles.link}><Link to='/tests'>Tests</Link></span>
+                <Link to='/rules'><span className={styles.link}>Rules</span></Link>
+                <Link to='/tests'><span className={styles.link}>Tests</span></Link>
             </div>
         </section>
     );

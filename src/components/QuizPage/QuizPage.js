@@ -79,36 +79,40 @@ function QuizPage() {
         </>
         :
         <div>
-          <h5 className={styles.welcomeHeadline}>Welcome, {userName}</h5>
           {
             quizArr ? <>
               {currentQuestion === quizArr.length ?
                 <div className={styles.resultBox}>
-                  <h4 className={styles.resultTitle}>You finished the test!</h4>
-                  { }
+                  {incorrect < 5 ?
+                    <h4 className={styles.resultSubtitle}>Congratulations,{userName} <br /> You passed the test!</h4> :
+                    <h4 className={styles.resultSubtitle}>Unfortunately, {userName}, you failed the test</h4>}
+                  <div className={styles.mainText}>You did {correct} correct answers and {incorrect} mistakes</div>
                   <div className={styles.imageContainer}>
                     <img src={resultQuizBanner} className={styles.img} alt='quiz banner'></img>
                   </div>
                   <Button color="success" variant="contained" size="large"
                     href='/result'
-                    sx={{ marginTop: "40px" }}>Show my results!</Button>
+                    sx={{ marginTop: "40px" }}>Show all my test results!</Button>
                 </div>
                 :
-                <section className={styles.content}>
-                  <div className={styles.info}>
-                    <p className={styles.category}>Cateogory is {category}</p>
-                    <p className={styles.score}>Correct - {correct}</p>
-                    <p className={styles.score}>Inccorect - {incorrect}</p>
-                    <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>
-                  </div>
-                  <QuizBlock
-                    currentQuestion={currentQuestion}
-                    setCurrentQuestion={setCurrentQuestion}
-                    options={options}
-                    quizArr={quizArr}
-                    correctAns={quizArr[currentQuestion]?.correct_answer}
-                  />
-                </section>
+                <>
+                  <h5 className={styles.welcomeHeadline}>Welcome, {userName}</h5>
+                  <section className={styles.content}>
+                    <div className={styles.info}>
+                      <p className={styles.category}>Cateogory is {category}</p>
+                      <p className={styles.score}>Correct - {correct}</p>
+                      <p className={styles.score}>Inccorect - {incorrect}</p>
+                      <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>
+                    </div>
+                    <QuizBlock
+                      currentQuestion={currentQuestion}
+                      setCurrentQuestion={setCurrentQuestion}
+                      options={options}
+                      quizArr={quizArr}
+                      correctAns={quizArr[currentQuestion]?.correct_answer}
+                    />
+                  </section>
+                </>
               }
             </>
               :
