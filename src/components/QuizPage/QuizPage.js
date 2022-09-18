@@ -1,5 +1,4 @@
 import styles from './QuizPage.module.scss';
-import { Link } from 'react-router-dom';
 import quizbanner from '../../assets/images/quizBanner.svg'
 import resultQuizBanner from '../../assets/images/resultQuizBanner.svg'
 import TextField from '@mui/material/TextField';
@@ -8,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { testsArr } from "../../assets/testArr.js"
 import QuizBlock from '../QuizBlock/QuizBlock';
 import { CircularProgress } from '@mui/material';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
 function QuizPage() {

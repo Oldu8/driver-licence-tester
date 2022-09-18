@@ -7,8 +7,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { useSelector, useDispatch } from 'react-redux'
-import { useState, useEffect } from "react";
+import { useSelector } from 'react-redux'
+import { StyledTableCell, StyledTableRow } from "../../functions/funcForMUITable";
+
 
 function ResultPage() {
   const state = useSelector((state) => state.userData.testsData)
@@ -28,17 +29,13 @@ function ResultPage() {
   }
   cycle(state)
 
-  useEffect(() => {
-    console.log(finalArr)
-  }, [])
-
-  function createData(name) {
-    return { name };
+  function createData(category, testNumber, status, correct, inccorect) {
+    return { category, testNumber, status, correct, inccorect };
   }
-  const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24),
-    createData('Ice cream sandwich', 237, 9.0, 37),
-  ];
+  const rows = finalArr.map((i, index) => {
+    return createData(...finalArr[index])
+  })
+
 
   return (
     <section className={styles.wrapper}>
@@ -49,35 +46,30 @@ function ResultPage() {
         </div>
       </div>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
           <TableHead>
             <TableRow>
-              <TableCell>Username</TableCell>
-              <TableCell >Test category</TableCell>
-              <TableCell >Status</TableCell>
-              <TableCell >Correct</TableCell>
-              <TableCell >Incorrect</TableCell>
+              <StyledTableCell>Test category</StyledTableCell>
+              <StyledTableCell align="center">Test number</StyledTableCell>
+              <StyledTableCell align="center">Status</StyledTableCell>
+              <StyledTableCell align="center">Correct</StyledTableCell>
+              <StyledTableCell align="center">Incorrect</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row) => (
-              <TableRow
-                key={row.name}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.name}
-                </TableCell>
-                <TableCell align="right">{row.calories}</TableCell>
-                <TableCell align="right">{row.fat}</TableCell>
-                <TableCell align="right">{row.carbs}</TableCell>
-                <TableCell align="right">{row.carbs}</TableCell>
-              </TableRow>
+              < StyledTableRow key={(row.testNumber + row.category)} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                <TableCell component="th" scope="row">{row.category}</TableCell>
+                <TableCell align="center">{row.testNumber}</TableCell>
+                <TableCell align="center">{row.status}</TableCell>
+                <TableCell align="center">{row.correct}</TableCell>
+                <TableCell align="center">{row.inccorect}</TableCell>
+              </StyledTableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
-    </section>
+    </section >
   );
 }
 
