@@ -71,8 +71,7 @@ const testCounterSlice = createSlice({
             let currInCorrect = currentState[category][testNumber].incorrect
             if (currStatus === 'Not started') {
                 state.testsData[category][testNumber].status = 'Started'
-                state.testsData.currentTest = { testNumber, category }
-
+                state.currentTest = { testNumber, category }
             }
             else if (currStatus === 'Started' && currInCorrect < 5) {
                 state.testsData[category][testNumber].status = 'Successfully'
@@ -81,7 +80,7 @@ const testCounterSlice = createSlice({
             }
         },
         setScore(state, action) {
-            const { category, testNumber } = current(state.testsData.currentTest)
+            const { category, testNumber } = current(state.currentTest)
             { action.payload === "inc" ? state.testsData[category][testNumber].correct += 1 : state.testsData[category][testNumber].incorrect += 1; }
         }
     },

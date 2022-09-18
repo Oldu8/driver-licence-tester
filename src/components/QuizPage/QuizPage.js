@@ -13,11 +13,11 @@ import { useSelector, useDispatch } from 'react-redux'
 
 function QuizPage() {
   const stateResult = useSelector((state) => state.userData.testsData)
-  const { testNumber, category } = stateResult?.currentTest;
+  const currentTestObj = useSelector((state) => state.userData)
+  const { testNumber, category } = currentTestObj?.currentTest;
   const quizArr = testsArr[category][testNumber];
 
   const { correct, incorrect } = stateResult[category][testNumber]
-
 
   // Local states to start quiz
   const [error, setError] = useState(false)
@@ -85,12 +85,13 @@ function QuizPage() {
               {currentQuestion === quizArr.length ?
                 <div className={styles.resultBox}>
                   <h4 className={styles.resultTitle}>You finished the test!</h4>
+                  { }
                   <div className={styles.imageContainer}>
                     <img src={resultQuizBanner} className={styles.img} alt='quiz banner'></img>
                   </div>
                   <Button color="success" variant="contained" size="large"
-                    // href='/result'
-                    sx={{ marginTop: "40px" }}>Show me result!</Button>
+                    href='/result'
+                    sx={{ marginTop: "40px" }}>Show my results!</Button>
                 </div>
                 :
                 <section className={styles.content}>
