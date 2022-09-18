@@ -1,0 +1,21 @@
+.wrapper {
+  min-height: 100vh;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 400px;
+  align-self: center;
+  padding: 20px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 15px 0;
+}

@@ -6,6 +6,7 @@ import TestsPage from './components/TestsPage/TestsPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import QuizPage from './components/QuizPage/QuizPage';
 import InfoPage from './components/InfoPage/InfoPage';
+import ResultPage from './components/ResultPage/ResultPage';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <div className='wrapper'>
           <Routes>
             <Route exact path='/' element={<HomePage />}></Route>
-            <Route path='/result' element={<div>result page</div>}></Route>
+            <Route path='/result' element={<ResultPage />}></Route>
             <Route path='/rules' element={<div>rules page</div>}></Route>
             <Route path='/quiz' element={<QuizPage />}></Route>
             <Route path='/tests' element={<TestsPage />}></Route>
