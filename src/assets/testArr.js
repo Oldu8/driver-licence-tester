@@ -3,6 +3,22 @@ import ds_t1_q2 from "./testsImg/ds_t1_q2.png"
 import ds_t1_q3 from "./testsImg/ds_t1_q3.png"
 import ds_t1_q4 from "./testsImg/ds_t1_q4.png"
 import ds_t1_q5 from "./testsImg/ds_t1_q5.png"
+import ds_t1_q6 from "./testsImg/ds_t1_q6.png"
+import ds_t1_q7 from "./testsImg/ds_t1_q7.png"
+import ds_t1_q8 from "./testsImg/ds_t1_q8.png"
+import ds_t1_q9 from "./testsImg/ds_t1_q9.png"
+import ds_t1_q10 from "./testsImg/ds_t1_q10.png"
+import ds_t1_q11 from "./testsImg/ds_t1_q11.png"
+import ds_t1_q12 from "./testsImg/ds_t1_q12.png"
+import ds_t1_q13 from "./testsImg/ds_t1_q13.png"
+import ds_t1_q14 from "./testsImg/ds_t1_q14.png"
+import ds_t1_q15 from "./testsImg/ds_t1_q15.png"
+import ds_t1_q16 from "./testsImg/ds_t1_q16.png"
+import ds_t1_q17 from "./testsImg/ds_t1_q17.png"
+import ds_t1_q18 from "./testsImg/ds_t1_q18.png"
+import ds_t1_q19 from "./testsImg/ds_t1_q19.png"
+import ds_t1_q20 from "./testsImg/ds_t1_q20.png"
+
 import ds_t2_q1 from "./testsImg/ds_t2_q1.png"
 import ds_t2_q2 from "./testsImg/ds_t2_q2.png"
 import ds_t2_q3 from "./testsImg/ds_t2_q3.png"
@@ -25,8 +41,11 @@ import ds_t5_q4 from "./testsImg/ds_t5_q4.png"
 import ds_t5_q5 from "./testsImg/ds_t5_q5.png"
 
 import dr_t1_q2 from "./testsImg/dr_t1_q2.png"
+import dr_t1_q9 from "./testsImg/dr_t1_q9.png"
 import dr_t2_q2 from "./testsImg/dr_t2_q2.png"
 import dr_t2_q4 from "./testsImg/dr_t2_q4.png"
+import dr_t5_q5 from "./testsImg/dr_t5_q5.png"
+
 
 
 export const testsArr = {
@@ -78,15 +97,142 @@ export const testsArr = {
                 ],
                 correct_answer: "signal and pull away from the curb"
             },
-            // {
-            //     question: "",
-            //     incorrect_answers: [
-            //         "",
-            //         "",
-            //         ""
-            //     ],
-            //     correct_answer: ''
-            // },
+            {
+                question: "In Ontario, whe must you turn on your headlights?",
+                incorrect_answers: [
+                    "Between half and hour after sunset and half an hour before sunrise, and at any time you cannot see clearly for a distance of 150 metres.",
+                    "Between dusk and dawn, and at any other time you cannot se clearly for a distance of 150 metres.",
+                    "Between sunset and sunrise, and at any other time you cannot see clearly for distance of 150 metres."
+                ],
+                correct_answer: 'Between half an hour before sunset and half an hour after sunrise, and at any other time you cannot see clearly for a distance of 150 metres.'
+            },
+            {
+                question: "When driving in heavy fog, you should use your",
+                incorrect_answers: [
+                    "parking lights nad high-beam headlights.",
+                    "high-beam headlights.",
+                    "parking lights."
+                ],
+                correct_answer: 'low-beam headlights.'
+            },
+            {
+                question: "The two-second rule is use to determine",
+                incorrect_answers: [
+                    "how fast you can react to obstacles.",
+                    "how fast you are travelling.",
+                    "how much gas you will save."
+                ],
+                correct_answer: 'whether you are following at a safe distance'
+            },
+            {
+                question: "If two vehicles approach an uncontrolled intersection from opposite directions at the same time, one going straight while the other is turning left, which vehicle has the right-of-way?",
+                img: dr_t1_q9,
+                incorrect_answers: [
+                    "The one turning left has the right-of-way.",
+                    "Both have the right-of-way.",
+                    "Both vehicles should stop first and then proceed."
+                ],
+                correct_answer: 'The one going straight has the right-of-way.'
+            },
+            {
+                question: "When getting out of your car on a busy street, you should open the door",
+                incorrect_answers: [
+                    "after making the proper signals.",
+                    "when you turn on your four-way flashers.",
+                    "at any time."
+                ],
+                correct_answer: 'when you are sure that it can be done safely.'
+            },
+            {
+                question: "A person whose driver's license is under suspension, may",
+                incorrect_answers: [
+                    "drive in an emergency.",
+                    "drive when accompanied by licensed driver.",
+                    "drive to and from work."
+                ],
+                correct_answer: 'not drive under any circumstances.'
+            },
+            {
+                question: "Which of the following classes of vehicles may carry a red light visible from the front?",
+                incorrect_answers: [
+                    "Trucks",
+                    "Bicycles",
+                    "Recreational vehicles"
+                ],
+                correct_answer: 'Emergency vehicles'
+            },
+            {
+                question: "When descending a long, steep hill, how should you control your speed?",
+                incorrect_answers: [
+                    "Shift into neutral.",
+                    "Keep applying the brakes.",
+                    "Turn off the ignition."
+                ],
+                correct_answer: 'Shift into a lower gear.'
+            },
+            {
+                question: "If you become very tired while driving, you should",
+                incorrect_answers: [
+                    "driver faster to your destination.",
+                    "open your windows to allow fresh air in the car.",
+                    "drink coffee."
+                ],
+                correct_answer: 'stop and rest.'
+            },
+            {
+                question: "While driving, a Level Two (Class G2) driver must not have a blood alcohol concentration greater than",
+                incorrect_answers: [
+                    "0.05%",
+                    "0.08%",
+                    "0.02%"
+                ],
+                correct_answer: 'zero.'
+            },
+            {
+                question: "When may lend your driver's licence to another person? ",
+                incorrect_answers: [
+                    "In emergencies",
+                    "Whan that person is learning to drive",
+                    "For indentification purposes only"
+                ],
+                correct_answer: 'Never'
+            },
+            {
+                question: "If you approach several snowplows clearing a freeway, you should NOT",
+                incorrect_answers: [
+                    "wait for the plows to allow traffic safety pass.",
+                    "keep a safe distance.",
+                    "do any of the above."
+                ],
+                correct_answer: 'try to pass between them.'
+            },
+            {
+                question: "Examples of hands-free devices include",
+                incorrect_answers: [
+                    "a Global Positioning System (GPS) device that is properly secured to the dashboard or another accessible place in the vehicle.",
+                    "a portable audio player (such as an MP3 player) that has been plugged into the vehicle's sound system with a preset playlist.",
+                    "a cell phone with an earpiece or headset using voice dialling, or plugged into the vehicle's sound system."
+                ],
+                correct_answer: 'all of the above.'
+            },
+            {
+                question: "On a highway, when may you drive at the maximum speed limit?",
+                incorrect_answers: [
+                    "Only on one-way roadways.",
+                    "At any time.",
+                    "Only in the daytime."
+                ],
+                correct_answer: "Only when it's safe to do so."
+            },
+            {
+                question: "If the signal light changes from green to yellow as you approach an intersection, what should you do?",
+                incorrect_answers: [
+                    "Continue through the intersection without slowing or stopping.",
+                    "Speed up to get past the yellow light before it turns red.",
+                    "Sound your horn to warm pedestrians and other drivers that you do not intend to stop."
+                ],
+                correct_answer: 'Stop. If a stop cannot be made safely, proceed with caution.'
+            },
         ],
         test2: [
             {
@@ -136,6 +282,16 @@ export const testsArr = {
                 ],
                 correct_answer: 'All of the above'
             },
+            {
+                question: "When you are in a roundabout,",
+                incorrect_answers: [
+                    "you can change lanes.",
+                    "drive in clockwise direction.",
+                    "you can stop."
+                ],
+                correct_answer: 'drive in a counter-clockwise direction.'
+            },
+
         ],
         test3: [{
             question: "Are drivers responsible for requiring their passengers to buckle up?",
@@ -230,7 +386,54 @@ export const testsArr = {
                 correct_answer: 'Either jail time or fine or both'
             },
         ],
-        // test5: []
+        test5: [
+            {
+                question: "A Level One learner driver may practice driving under the supervision of a licensed driver who has at least ______ of driving experience.",
+                incorrect_answers: [
+                    "2 years",
+                    "3 years",
+                    "5 years"
+                ],
+                correct_answer: '4 years'
+            },
+            {
+                question: "On a roadway where traffic is moving in both directions, in what position must you be before making a left turn?",
+                incorrect_answers: [
+                    "In any position as long as you signal",
+                    "Close to the right-hand side of the roadway",
+                    "Close to the left-hand side of the roadway"
+                ],
+                correct_answer: 'To the right of and as close to center line of the roadway as possible.'
+            },
+            {
+                question: "You must report an accident to the police if",
+                incorrect_answers: [
+                    "damage property other than vehicles is over $2,000",
+                    "damage to vehicles is over $2,000",
+                    "someone has been hurt of killed"
+                ],
+                correct_answer: 'any of the above are true'
+            },
+            {
+                question: "When approaching a construction area, what should you do?",
+                incorrect_answers: [
+                    "Speed up to get out of the area quickly.",
+                    "Honk your horn a few times to warm the workers.",
+                    "Come to a complete stop until the workers signal you to proceed."
+                ],
+                correct_answer: 'Slow down any yield the right-of-way if necessary.'
+            },
+            {
+                question: "What does a red signal light with a green arrow mean ?",
+                img: dr_t5_q5,
+                incorrect_answers: [
+                    "Stop and wait for the green light before turning in the direction of the arrow.",
+                    "Stop and wait for a green light. The green arrow is a signal for pedestrians.",
+                    "Stop and then you may turn in the direction of the arrow."
+                ],
+                correct_answer: 'You may turn in the direction of the arrow.'
+            },
+        ]
     },
     drivingSigns: {
         test1: [
@@ -284,16 +487,155 @@ export const testsArr = {
                 ],
                 correct_answer: "Hidden school bus stop ahead"
             },
-            // {
-            //     question: "",
-            //     options: [
-            //         "",
-            //         "",
-            //         "",
-            //         ""
-            //     ],
-            //     correct_answer: ''
-            // },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q6,
+                incorrect_answers: [
+                    "This lane is for buses only",
+                    "This lane is not for bicycles",
+                    "This lane is for trucks only",
+                ],
+                correct_answer: 'This lane is for bicycles only.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q7,
+                incorrect_answers: [
+                    "You may stop temporarily to load or unload merchandise but not passengers.",
+                    "You may not stop for any reason.",
+                    "You may stop temporarily to load or unload passengers or merchandise."
+                ],
+                correct_answer: 'You may stop temporarily to load or unload passengers but not merchandise.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q8,
+                incorrect_answers: [
+                    "Watch for pedestrians and be prepared to share for the road with them.",
+                    "There is road work ahead.",
+                    "A traffic control person is ahead. Drive slowly and watch for instructions."
+                ],
+                correct_answer: 'A survey crew is working of the road ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q9,
+                incorrect_answers: [
+                    "Divided roadway ahead",
+                    "Low-clearance underpass ahead",
+                    "Falling rocks"
+                ],
+                correct_answer: 'Pavement ends'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q10,
+                incorrect_answers: [
+                    "Accekeration lane ahead.",
+                    "Narrow passage ahead.",
+                    "Left lane ends ahead."
+                ],
+                correct_answer: 'Right lane ends ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q11,
+                incorrect_answers: [
+                    "No smoking for more than 3 minutes.",
+                    "No stopping for more than 3 minutes.",
+                    "Idling permitted for at least 3 minutes."
+                ],
+                correct_answer: 'No idling for more than 3 minutes.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q12,
+                incorrect_answers: [
+                    "School zone ahead.",
+                    "Bumpy road ahead.",
+                    "Possible falling rocks. "
+                ],
+                correct_answer: 'Underpasss ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q13,
+                incorrect_answers: [
+                    "Keep right if there is faster traffic.",
+                    "There is a sharp bend or curve in the road ahead.",
+                    "This lane exits to the right."
+                ],
+                correct_answer: 'There is a slight bend or curve in the road ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q14,
+                incorrect_answers: [
+                    "Do not honk at animals.",
+                    "There is a zoo ahead.",
+                    "Deer are welcome."
+                ],
+                correct_answer: 'Deer regularly cross here.'
+            }, {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q15,
+                incorrect_answers: [
+                    "Ther is movable bridge ahead.",
+                    "Do not enter",
+                    "There is a construction zone ahead."
+                ],
+                correct_answer: 'There may be water flowing over the road.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q16,
+                incorrect_answers: [
+                    "There is a playground to the right.",
+                    "Danger, the road ends ahead.",
+                    "Take a detour."
+                ],
+                correct_answer: 'Danger, there is a sharp turn ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q17,
+                incorrect_answers: [
+                    "Yield to the left.",
+                    "Road turns left.",
+                    "Slight bend or curve in the road ahead."
+                ],
+                correct_answer: "Close lane."
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q18,
+                incorrect_answers: [
+                    "A road is branching off ahead.",
+                    "There is a slight bend or curve in the road ahead.",
+                    "Keep right of the traffic island."
+                ],
+                correct_answer: 'There is a passing lane ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t1_q19,
+                incorrect_answers: [
+                    "Np Stopping",
+                    "No parking",
+                    "No trucks"
+                ],
+                correct_answer: 'No passing'
+            },
+            {
+                question: "Upon approaching a yield sign, what must you do?",
+                img: ds_t1_q20,
+                incorrect_answers: [
+                    "Slow down as other vehicles give you the righ-of-way.",
+                    "Stop, then enter traffic quickly.",
+                    "Stop, then enter traffic slowly."
+                ],
+                correct_answer: 'Slow down, stop if necessary, and yield the right-of-way.'
+            },
         ],
         test2: [
             {
