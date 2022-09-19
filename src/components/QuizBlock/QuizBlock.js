@@ -6,6 +6,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setScore } from "../../redux/testCounterSlice"
 
 function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns }) {
+  console.log(quizArr)
+  console.log(currentQuestion)
   const dispatch = useDispatch()
 
   const [selected, setSelected] = useState()
@@ -26,6 +28,12 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
       <h2 className={styles.title}>Question {currentQuestion + 1}</h2>
       <div className={styles.box}>
         <h4 className={styles.question}>{quizArr[currentQuestion].question}</h4>
+        {quizArr[currentQuestion].img ?
+          <div className={styles.imageContainer}>
+            <img src={quizArr[currentQuestion]?.img} className={styles.img} alt='question img'></img>
+          </div>
+          : false
+        }
         <div className={styles.options}>
           {options.map((i) => {
             return <button
