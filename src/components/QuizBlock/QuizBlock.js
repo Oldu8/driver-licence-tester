@@ -6,8 +6,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setScore } from "../../redux/testCounterSlice"
 
 function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns }) {
-  console.log(quizArr)
-  console.log(currentQuestion)
   const dispatch = useDispatch()
 
   const [selected, setSelected] = useState()
@@ -22,7 +20,6 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
     setSelected();
     setCurrentQuestion(currentQuestion + 1)
   }
-
   return (
     <div className={styles.quizBox}>
       <h2 className={styles.title}>Question {currentQuestion + 1}</h2>
@@ -51,12 +48,16 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
         </div>
       </div>
       <div className={styles.buttonsBlock}>
-        {checked ?
-          <Button color="secondary" variant="contained" size="large" onClick={() => nextQuestion()}>Next question</Button>
+        {quizArr.length === (currentQuestion + 1) ?
+          <Button color="success" variant="contained" size="large" onClick={() => nextQuestion()}>Finish test</Button>
           :
-          <Button color="primary" variant="contained" size="large" onClick={() => checkAnswer()}>Check answer!</Button>}
+          checked ?
+            <Button color="secondary" variant="contained" size="large" onClick={() => nextQuestion()}>Next question</Button>
+            :
+            <Button color="primary" variant="contained" size="large" disabled={selected ? false : true} onClick={() => checkAnswer()}>Check answer!</Button>
+        }
       </div>
-    </div>
+    </div >
   );
 }
 
