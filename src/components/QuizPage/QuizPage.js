@@ -46,7 +46,6 @@ function QuizPage() {
     }
   }, [currentQuestion])
 
-
   const handleSubmit = () => {
     userName.length < 3 ?
       setError(true) :

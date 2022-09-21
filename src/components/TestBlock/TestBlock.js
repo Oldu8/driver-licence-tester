@@ -1,7 +1,7 @@
 import styles from './TestBlock.module.scss';
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from 'react-redux'
-import { setStatus } from '../../redux/testCounterSlice'
+import { setStatus, setClearResults } from '../../redux/testCounterSlice'
 
 
 function TestBlock({ title, number, category, setCategory, setTestNumber }) {
@@ -13,8 +13,8 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
 
   const handleClick = (category, number) => {
     dispatch(setStatus({ number, category }))
-    setCategory(category);
-    setTestNumber(number);
+    console.log('click')
+    dispatch(setClearResults({ number, category }))
   }
   const btnStyle = {
     color: 'white',

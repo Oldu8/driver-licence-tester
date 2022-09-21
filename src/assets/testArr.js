@@ -716,7 +716,7 @@ export const testsArr = {
                 incorrect_answers: [
                     "Playground",
                     "Park ahead",
-                    "Park ahead"
+                    "Parking area ahead"
                 ],
                 correct_answer: 'School zone'
             },
