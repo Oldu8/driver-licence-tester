@@ -1,5 +1,8 @@
 .homePage {
   min-height: 80vh;
+  @media screen and (max-width: 768px) {
+    max-width: 100vw;
+  }
 }
 
 .imageContainer {
@@ -8,8 +11,11 @@
 }
 
 .img {
-  max-width: 300px;
+  width: 300px;
   align-self: center;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
 }
 
 .headline {
@@ -17,6 +23,11 @@
   font-size: 36px;
   font-weight: 500;
   padding: 15px 0;
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    padding: 10px 0;
+    max-width: 80%;
+  }
 }
 
 .mainText {
@@ -25,6 +36,11 @@
   font-size: 20px;
   font-weight: 300;
   margin: 25px auto;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    margin: 10px auto;
+    width: 70%;
+  }
 }
 
 .links {
@@ -33,6 +49,9 @@
   padding: 20px 0;
   align-items: center;
   justify-content: space-around;
+  @media screen and (max-width: 768px) {
+    padding: 5px 0;
+  }
 }
 
 .link {
@@ -50,7 +69,10 @@
   &:hover {
     outline: 3px solid rgb(146, 49, 49);
   }
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
+  @media screen and (max-width: 768px) {
+    min-width: 200px;
+    padding: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
 }
