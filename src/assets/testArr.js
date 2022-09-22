@@ -93,9 +93,9 @@ export const testsArr = {
                 incorrect_answers: [
                     "honk your horn and slowly pull away from the curb",
                     "check for traffic, signal, and quickly pull away from the curb",
-                    "check for traffic, signal, and pull away from the curb when it is safe to do so",
+                    "signal and pull away from the curb",
                 ],
-                correct_answer: "signal and pull away from the curb"
+                correct_answer: " check for traffic, signal, and pull away from the curb when it is safe to do so"
             },
             {
                 question: "In Ontario, whe must you turn on your headlights?",

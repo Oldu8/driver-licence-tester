@@ -63,20 +63,23 @@ const testCounterSlice = createSlice({
         }
     },
     reducers: {
-        setStatus: (state, action) => {
+        setStartStatus: (state, action) => {
             const { category, number } = action.payload
             const testNumber = 'test' + number;
             const currentState = current(state.testsData);
             let currStatus = currentState[category][testNumber].status;
-            let currInCorrect = currentState[category][testNumber].incorrect
-            let currCorrect = currentState[category][testNumber].correct
             if (currStatus === 'Not started') {
                 state.testsData[category][testNumber].status = 'Started'
-
                 state.currentTest = { testNumber, category }
             }
-            else if (currStatus === 'Started' && currCorrect > 16) {
-                state.testsData[category][testNumber].status = 'Successfully';
+        },
+        setFinishStatus: (state, action) => {
+            const { testNumber, category } = action.payload
+            const currentState = current(state.testsData);
+            let currInCorrect = currentState[category][testNumber].incorrect
+            let currCorrect = currentState[category][testNumber].correct
+            if (currCorrect > 16) {
+                state.testsData[category][testNumber].status = 'Passed';
 
             } else if (currentState === 'Started' && currInCorrect > 4) {
                 state.testsData[category][testNumber].status = 'Failed'
@@ -96,5 +99,5 @@ const testCounterSlice = createSlice({
     },
 })
 
-export const { setStatus, setScore, setClearResults } = testCounterSlice.actions;
+export const { setStartStatus, setFinishStatus, setScore, setClearResults } = testCounterSlice.actions;
 export default testCounterSlice.reducer

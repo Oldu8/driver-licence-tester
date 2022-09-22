@@ -84,7 +84,7 @@ function QuizPage() {
                   {incorrect < 5 ?
                     <h4 className={styles.resultSubtitle}>Congratulations,{userName} <br /> You passed the test!</h4> :
                     <h4 className={styles.resultSubtitle}>Unfortunately, {userName}, you failed the test</h4>}
-                  <div className={styles.mainText}>You did {correct} correct answers and {incorrect} mistakes</div>
+                  <div className={styles.mainText}>You did {correct + 1} correct answers and {incorrect} mistakes</div>
                   <div className={styles.imageContainer}>
                     <img src={resultQuizBanner} className={styles.img} alt='quiz banner'></img>
                   </div>

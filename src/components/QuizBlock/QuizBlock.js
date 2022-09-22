@@ -3,11 +3,12 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from 'react-redux'
-import { setScore } from "../../redux/testCounterSlice"
+import { setScore, setFinishStatus } from "../../redux/testCounterSlice"
 
 function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, correctAns }) {
   const dispatch = useDispatch()
-
+  const currentTestObj = useSelector((state) => state.userData)
+  const { testNumber, category } = currentTestObj?.currentTest;
   const [selected, setSelected] = useState()
   const [checked, setChecked] = useState(false)
 
@@ -20,6 +21,15 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
     setSelected();
     setCurrentQuestion(currentQuestion + 1)
   }
+
+  const finishTest = (testNumber, category) => {
+    setChecked(false);
+    setSelected();
+    setCurrentQuestion(currentQuestion + 1)
+    dispatch(setFinishStatus({ testNumber, category }))
+  }
+
+
   return (
     <div className={styles.quizBox}>
       <h2 className={styles.title}>Question {currentQuestion + 1}</h2>
@@ -49,7 +59,7 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
       </div>
       <div className={styles.buttonsBlock}>
         {quizArr.length === (currentQuestion + 1) ?
-          <Button color="success" variant="contained" size="large" onClick={() => nextQuestion()}>Finish test</Button>
+          <Button color="success" variant="contained" size="large" onClick={() => finishTest(testNumber, category)}>Finish test</Button>
           :
           checked ?
             <Button color="secondary" variant="contained" size="large" onClick={() => nextQuestion()}>Next question</Button>
