@@ -13,12 +13,11 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
 
   const handleClick = (category, number) => {
     dispatch(setStartStatus({ number, category }))
-    console.log('click')
-    dispatch(setClearResults({ number, category }))
   }
   const btnStyle = {
     color: 'white',
     border: '2px solid rgb(3, 0, 8);',
+    width: '80px',
     backgroundColor: 'rgb(237, 166, 35)',
     fontWeight: 600,
     padding: "10px",
@@ -33,7 +32,7 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
       </div>
       <Button sx={btnStyle}
         href='/quiz'
-        onClick={() => handleClick(category, number)}>Start</Button>
+        onClick={() => handleClick(category, number)}>{state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}</Button>
     </li>
 
   );

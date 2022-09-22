@@ -7,15 +7,17 @@ import { useState, useEffect } from 'react';
 import { testsArr } from "../../assets/testArr.js"
 import QuizBlock from '../QuizBlock/QuizBlock';
 import { CircularProgress } from '@mui/material';
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { setClearResults } from '../../redux/testCounterSlice'
 
 
 function QuizPage() {
+  const dispatch = useDispatch()
   const stateResult = useSelector((state) => state.userData.testsData)
+
   const currentTestObj = useSelector((state) => state.userData)
   const { testNumber, category } = currentTestObj?.currentTest;
   const quizArr = testsArr[category][testNumber];
-
   const { correct, incorrect } = stateResult[category][testNumber]
 
   // Local states to start quiz
@@ -50,6 +52,7 @@ function QuizPage() {
     userName.length < 3 ?
       setError(true) :
       setQuiezStarted(true)
+    dispatch(setClearResults({ testNumber, category }))
   }
 
   const errorStyle = {

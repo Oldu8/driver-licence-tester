@@ -90,8 +90,7 @@ const testCounterSlice = createSlice({
             { action.payload === "inc" ? state.testsData[category][testNumber].correct += 1 : state.testsData[category][testNumber].incorrect += 1; }
         },
         setClearResults(state, action) {
-            const { category, number } = action.payload
-            const testNumber = 'test' + number;
+            const { category, testNumber } = action.payload
             const currentState = state.testsData;
             currentState[category][testNumber].incorrect = 0;
             currentState[category][testNumber].correct = 0;
