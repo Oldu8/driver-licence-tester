@@ -19,7 +19,7 @@ function ToggleBlock({ title, category }) {
   };
 
   return (
-    <section>
+    <section className={styles.wrapper}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
