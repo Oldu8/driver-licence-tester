@@ -1,0 +1,39 @@
+.button {
+  min-width: 150px;
+  color: white;
+  border: 1px solid white;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin-right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  &:hover {
+    color: black;
+    background: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem 0.5rem 0 0.5rem;
+  }
+}
