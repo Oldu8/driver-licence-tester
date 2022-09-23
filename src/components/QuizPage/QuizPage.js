@@ -100,7 +100,7 @@ function QuizPage() {
                   <h5 className={styles.welcomeHeadline}>Welcome, {userName}</h5>
                   <section className={styles.content}>
                     <div className={styles.info}>
-                      <p className={styles.category}>Cateogory is {category}</p>
+                      <p className={styles.category}>Category is {category === 'drivingRules' ? 'Driving Rules' : 'Driving Signs'}</p>
                       <p className={styles.score}>Correct - {correct}</p>
                       <p className={styles.score}>Inccorect - {incorrect}</p>
                       <p className={styles.queistionNumber}>Question {currentQuestion + 1} out of {quizArr.length}</p>

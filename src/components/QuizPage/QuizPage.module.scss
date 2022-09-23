@@ -1,5 +1,9 @@
 .container {
   min-height: 100vh;
+  @media screen and (max-width: 768px) {
+    max-width: 100vw;
+    margin-top: 3rem;
+  }
 }
 .content {
   display: flex;
@@ -38,6 +42,9 @@
   width: 30%;
   align-items: center;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .error {
@@ -50,13 +57,21 @@
   text-align: center;
   font-size: 27px;
   margin: 10px auto;
-  padding: 25px 0;
+  padding: 0.8rem 0;
+  @media (max-width: 768px) {
+    font-size: 21px;
+    margin: 0;
+  }
 }
 
 .info {
   display: flex;
   justify-content: space-around;
   padding-bottom: 10px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .queistionNumber {

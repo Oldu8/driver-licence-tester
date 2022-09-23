@@ -2,12 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .title {
   font-size: 30px;
   align-items: center;
+  padding-bottom: 0.5rem;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .box {
@@ -15,13 +19,19 @@
   border-radius: 25px;
   min-height: 50vh;
   width: 60vw;
-  padding: 25px;
+  padding: 1.5rem;
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 }
 
 .question {
-  padding: 15px 0;
+  padding: 0.5rem 0;
   text-align: center;
   font-size: 23px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .options {
@@ -37,7 +47,10 @@
   margin: 7px 0;
   background-color: rgb(255, 255, 255);
   text-align: start;
-  padding: 2px 0 2px 15px;
+  padding: 3px 0 3px 1rem;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .selectedOption {
@@ -61,11 +74,19 @@
 }
 
 .buttonsBlock {
-  margin: 35px auto 0 auto;
+  margin: 2rem auto;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .imageContainer {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+}
+
+.img {
+  width: 90vw;
+  align-self: center;
 }

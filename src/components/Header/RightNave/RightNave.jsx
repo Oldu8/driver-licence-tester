@@ -7,6 +7,7 @@ const Nav = styled.nav`
   justify-content: start;
   flex-flow: row nowrap;
   @media (max-width: 768px) {
+    z-index: 10;
     transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
     flex-flow: column nowrap;
     background: radial-gradient(
