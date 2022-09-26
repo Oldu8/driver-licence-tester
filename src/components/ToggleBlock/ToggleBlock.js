@@ -25,9 +25,9 @@ function ToggleBlock({ title, category }) {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
-          sx={{ width: '300px' }}
+          sx={{ minWidth: '300px', }}
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography sx={{ minWidth: '33%', flexShrink: 0, minHeight: '40px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             {title}
           </Typography>
         </AccordionSummary>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     return (
-        <section className={styles.homePage}>
+        <section className={styles.wrapper}>
             <div className={styles.content}>
                 <h2 className={styles.headline}>Welcome to our Ontario G1 Driving test</h2>
                 <div className={styles.imageContainer}>

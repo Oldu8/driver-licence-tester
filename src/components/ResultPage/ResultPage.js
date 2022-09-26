@@ -46,14 +46,14 @@ function ResultPage() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>
-        <h2 className={styles.headline}>Good job! <br /> Here you can find your tests results</h2>
+        <h2 className={styles.headline}>Here you can find your tests results</h2>
         <div className={styles.imageContainer}>
           <img src={resultBanner} className={styles.img} alt='result banner'></img>
         </div>
       </div>
-      <TableContainer sx={{ display: 'flex', justifyContent: 'space-between', width: '100vw' }}>
+      <TableContainer sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
         <Table sx={{
-          width: '100vw', borderBottom: '1px solid grey', boxShadow: '7px 7px 10px 7px rgba(0, 0, 0, 0.63)',
+          width: '100%', borderBottom: '1px solid grey', boxShadow: '7px 7px 10px 7px rgba(0, 0, 0, 0.63)',
         }}
           size="small" aria-label="a dense table">
           <TableHead sx={{ maxWidth: '90vw' }}>
@@ -67,7 +67,7 @@ function ResultPage() {
           </TableHead>
           <TableBody>
             {rows.map((row) => (
-              < StyledTableRow key={(row.testNumber + row.category)} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+              < StyledTableRow key={(row.testNumber + row.category)} sx={{ height: '48px', '&:last-child td, &:last-child th': { border: 0 } }}>
                 <StyledTableCellBody component="th" scope="row">{row.category === 'drivingRules' ? 'Driving Rules' : 'Driving signs'}</StyledTableCellBody>
                 <StyledTableCellBody align="center" sx={{ textTransform: 'capitalize' }}>{row.testNumber}</StyledTableCellBody>
                 <StyledTableCellBody align="center">{row.status}</StyledTableCellBody>

@@ -25,8 +25,8 @@ function App() {
             <Route path='/info' element={<InfoPage />}></Route>
           </Routes>
         </div>
+        <Footer />
       </section>
-      <Footer />
     </BrowserRouter>
   );
 }

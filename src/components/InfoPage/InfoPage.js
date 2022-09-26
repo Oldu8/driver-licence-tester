@@ -15,7 +15,7 @@ function InfoPage() {
   };
 
   return (
-    <div className={styles.content}>
+    <div className={styles.wrapper}>
       <h2 className={styles.mainTitle}>General information about recieving driver license</h2>
       <p className={styles.subtitle}>Here you will find basic information regarding obtaining a driver's license in Ontario, Canada. Thanks to the collected and grouped information, you will be able to better understand what tasks you will face and will be able to better prepare before trying to pass a test for knowledge of traffic rules or signs.</p>
       <div className={styles.box}>

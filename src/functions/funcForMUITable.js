@@ -8,13 +8,12 @@ export const StyledTableCellHead = styled(TableCell)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
+    textAlign: 'center',
     fontWeight: 600,
-    paddingTop: 1,
-    paddingBottom: 2,
+    paddingTop: "0.6rem",
+    paddingBottom: "0.6rem",
   },
   [theme.breakpoints.down("sm")]: {
-    textAlign: 'center',
-    // fontSize: "13px",
     padding: '10px 5px',
     fontWeight: 500,
     paddingTop: 0.5,
@@ -28,17 +27,16 @@ export const StyledTableCellBody = styled(TableCell)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
-    fontWeight: 600,
-    paddingTop: 1,
-    paddingBottom: 2,
+    textAlign: 'center',
+    fontWeight: 400,
+    paddingTop: "0.6rem",
+    paddingBottom: "0.6rem",
   },
   [theme.breakpoints.down("sm")]: {
-    textAlign: 'center',
     fontSize: "13px",
-    padding: '20px 5px',
-    fontWeight: 500,
-    paddingTop: "0.8rem",
-    paddingBottom: "0.8rem",
+    padding: '20px 0px',
+    paddingTop: "0.3rem",
+    paddingBottom: "0.3rem",
   },
 }));
 
