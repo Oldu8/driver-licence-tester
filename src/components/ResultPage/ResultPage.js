@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useSelector } from 'react-redux'
-import { StyledTableCell, StyledTableRow } from "../../functions/funcForMUITable";
+import { StyledTableCellHead, StyledTableRow, StyledTableCellBody } from "../../functions/funcForMUITable";
 import { padding } from '@mui/system';
 import { Button } from '@mui/material';
 
@@ -51,27 +51,28 @@ function ResultPage() {
           <img src={resultBanner} className={styles.img} alt='result banner'></img>
         </div>
       </div>
-      <TableContainer sx={{ display: 'flex', justifyContent: 'center', }}>
+      <TableContainer sx={{ display: 'flex', justifyContent: 'space-between', width: '100vw' }}>
         <Table sx={{
-          maxWidth: '70vw', border: '1px solid grey', boxShadow: '7px 7px 10px 7px rgba(0, 0, 0, 0.63)', margin: '30px'
-        }} size="small" aria-label="a dense table">
-          <TableHead>
+          width: '100vw', borderBottom: '1px solid grey', boxShadow: '7px 7px 10px 7px rgba(0, 0, 0, 0.63)',
+        }}
+          size="small" aria-label="a dense table">
+          <TableHead sx={{ maxWidth: '90vw' }}>
             <TableRow>
-              <StyledTableCell >Test category</StyledTableCell>
-              <StyledTableCell align="center" >Test number</StyledTableCell>
-              <StyledTableCell align="center" >Status</StyledTableCell>
-              <StyledTableCell align="center" >Correct</StyledTableCell>
-              <StyledTableCell align="center"> Incorrect</StyledTableCell>
+              <StyledTableCellHead >Test category</StyledTableCellHead>
+              <StyledTableCellHead align="center" >Test number</StyledTableCellHead>
+              <StyledTableCellHead align="center" >Status</StyledTableCellHead>
+              <StyledTableCellHead align="center" >Correct</StyledTableCellHead>
+              <StyledTableCellHead align="center"> Incorrect</StyledTableCellHead>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row) => (
               < StyledTableRow key={(row.testNumber + row.category)} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                <TableCell component="th" scope="row">{row.category === 'drivingRules' ? 'Driving Rules' : 'Driving signs'}</TableCell>
-                <TableCell align="center" sx={{ textTransform: 'capitalize' }}>{row.testNumber}</TableCell>
-                <TableCell align="center">{row.status}</TableCell>
-                <TableCell align="center">{row.correct}</TableCell>
-                <TableCell align="center">{row.inccorect}</TableCell>
+                <StyledTableCellBody component="th" scope="row">{row.category === 'drivingRules' ? 'Driving Rules' : 'Driving signs'}</StyledTableCellBody>
+                <StyledTableCellBody align="center" sx={{ textTransform: 'capitalize' }}>{row.testNumber}</StyledTableCellBody>
+                <StyledTableCellBody align="center">{row.status}</StyledTableCellBody>
+                <StyledTableCellBody align="center">{row.correct}</StyledTableCellBody>
+                <StyledTableCellBody align="center">{row.inccorect}</StyledTableCellBody>
               </StyledTableRow>
             ))}
           </TableBody>

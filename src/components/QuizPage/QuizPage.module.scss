@@ -19,7 +19,10 @@
 .img {
   width: 300px;
   align-self: center;
-  padding: 20px;
+  padding: 1rem;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
 }
 
 .headline {
