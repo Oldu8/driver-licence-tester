@@ -24,6 +24,17 @@ import ds_t2_q2 from "./testsImg/ds_t2_q2.png"
 import ds_t2_q3 from "./testsImg/ds_t2_q3.png"
 import ds_t2_q4 from "./testsImg/ds_t2_q4.png"
 import ds_t2_q5 from "./testsImg/ds_t2_q5.png"
+import ds_t2_q6 from "./testsImg/ds_t2_q6.png"
+import ds_t2_q8 from "./testsImg/ds_t2_q8.png"
+import ds_t2_q9 from "./testsImg/ds_t2_q9.png"
+import ds_t2_q10 from "./testsImg/ds_t2_q10.png"
+import ds_t2_q11 from "./testsImg/ds_t2_q11.png"
+import ds_t2_q12 from "./testsImg/ds_t2_q12.png"
+import ds_t2_q13 from "./testsImg/ds_t2_q13.png"
+import ds_t2_q14 from "./testsImg/ds_t2_q14.png"
+import ds_t2_q15 from "./testsImg/ds_t2_q15.png"
+import ds_t2_q16 from "./testsImg/ds_t2_q16.png"
+
 import ds_t3_q1 from "./testsImg/ds_t3_q1.png"
 import ds_t3_q2 from "./testsImg/ds_t3_q2.png"
 import ds_t3_q3 from "./testsImg/ds_t3_q3.png"
@@ -290,6 +301,83 @@ export const testsArr = {
                     "you can stop."
                 ],
                 correct_answer: 'drive in a counter-clockwise direction.'
+            },
+            {
+                question: "You are approaching an intersection with flashing red light. You must",
+                incorrect_answers: [
+                    "proceed with caution.",
+                    "change lanes.",
+                    "make a U-turn."
+                ],
+                correct_answer: "come to a complete stop and proceed only when it's safe."
+            },
+            {
+                question: "While driving,you receive a call on your hand-hell cell phone. There are no passengers who can take the call for you. What should you do ?",
+                incorrect_answers: [
+                    "Answer the phone and promise to call the person back later.",
+                    "Text back the caller to let him know that you're driving.",
+                    "Answer the phone only if you've been expecting an important call."
+                ],
+                correct_answer: 'Pull over and park before using your cell phone.'
+            },
+            {
+                question: "Using cell phone while driving",
+                incorrect_answers: [
+                    "is acceptable.",
+                    "should be avoid, but it isn't illegal.",
+                    "is a good way to multitask."
+                ],
+                correct_answer: 'increase the risk of a collision.'
+            },
+            {
+                question: "If you change your name or address, you must notify the Ministr of Transport within",
+                incorrect_answers: [
+                    "14 days.",
+                    "30 days.",
+                    "45 days."
+                ],
+                correct_answer: '6 days.'
+            },
+            {
+                question: "Overdriving you headlights at night is dangerous because",
+                incorrect_answers: [
+                    "it can drain the car battery.",
+                    "your headlights are too bright.",
+                    "you are driving too fast."
+                ],
+                correct_answer: 'you cannot stop within the distance that you can see ahead.'
+            }, {
+                question: "While driving at night, if you meet an oncoming vehicle with blinding bright lights, what should you do ?",
+                incorrect_answers: [
+                    "Look at the headlights of the approaching vehicle.",
+                    "Open and shut your eyes rapidly.",
+                    "Turn on your high-beam headlights."
+                ],
+                correct_answer: 'Look to the right edge of the roadway.'
+            }, {
+                question: "A broken yellow line on your side of the roadway means that you may",
+                incorrect_answers: [
+                    "not pass.",
+                    "pass only  under ideal driving conditions.",
+                    "pass only during daylight hours."
+                ],
+                correct_answer: 'pass if the way is clear.'
+            }, {
+                question: "If you are convicted of failing to stop when a police officer gave pursuit, you may face which of the following penalties?",
+                incorrect_answers: [
+                    "Up to 6 month in jail",
+                    "A fine of up to $25.000",
+                    "Licence suspension for 5 years."
+                ],
+                correct_answer: 'All of the above.'
+            }, {
+                question: "Before leaving your vehicle parked on the right side of the street, facing downgrade, you should",
+                incorrect_answers: [
+                    "set your parking brake only.",
+                    "turn your front wheels to the left and set your parking brake.",
+                    "leave your front wheels parallel to the curb."
+                ],
+                correct_answer: 'turn your fron wheels to the right and set your parking brake.'
             },
 
         ],
@@ -687,6 +775,115 @@ export const testsArr = {
                     "Yield right-of-way"
                 ],
                 correct_answer: 'Stop signal ahead'
+            },
+            {
+                question: "What does this sign mean ?",
+                img: ds_t2_q6,
+                incorrect_answers: [
+                    "Divided highway ends",
+                    "Two-way traffic",
+                    "Road under construction"
+                ],
+                correct_answer: 'Divided highway begins'
+            },
+            {
+                question: "A 'No parking' sign means",
+                incorrect_answers: [
+                    "you may not stop for any reason.",
+                    "you may stop temporarily to load or unload merchandise but not passengers.",
+                    "you may stop temporarily to load or unload passengers but not merchandise."
+                ],
+                correct_answer: 'you may stop temporarily to load or unload passengers or merchandise.'
+            },
+            {
+                question: "What does this sign mean ?",
+                img: ds_t2_q8,
+                incorrect_answers: [
+                    "Slower traffic must turn right.",
+                    "The right lane is for faster traffic.",
+                    "Slow down when you are in the right lane."
+                ],
+                correct_answer: 'Slower traffic must keep right.'
+            },
+            {
+                question: "What does this sign mean ?",
+                img: ds_t2_q9,
+                incorrect_answers: [
+                    "No parking at any time.",
+                    "You may not park in the designated area during the posted times.",
+                    "Only weekend parking is allowed."
+                ],
+                correct_answer: 'You may park in the designated are during the posted times.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q10,
+                incorrect_answers: [
+                    "You must stop for a school bus if your turn signals are flashing.",
+                    "You may pass a school bus if its red signals are flashing.",
+                    "You must stop for a school bus if the traffic lights are flashing."
+                ],
+                correct_answer: 'You must stop for a school bus if its red signals are flashing.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q11,
+                incorrect_answers: [
+                    "You may stop and rest here.",
+                    "Drive to the left of the sign.",
+                    "There is a playground ahead."
+                ],
+                correct_answer: 'Drive to the right of the sign.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q12,
+                incorrect_answers: [
+                    "Right turns are not allowed.",
+                    "Left turns are not allowed.",
+                    "Going straight is allowed."
+                ],
+                correct_answer: 'Going straight is not allowed.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q13,
+                incorrect_answers: [
+                    "No parking.",
+                    "No stopping.",
+                    "Bicycles allowed on this road."
+                ],
+                correct_answer: 'No bicycles allowed on this road.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q14,
+                incorrect_answers: [
+                    "There are no traffic signals on this road.",
+                    "There is a stop sign ahead.",
+                    "There is someone directing traffic ahead."
+                ],
+                correct_answer: 'There is a traffic signal ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q15,
+                incorrect_answers: [
+                    "Maximum speed limit at night.",
+                    "Maximum safe speed on the shoulder.",
+                    "Recommended speed in a construction zone."
+                ],
+                correct_answer: 'Maximum safe speed for a curve.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q16,
+                incorrect_answers: [
+                    "This is construction zone.",
+                    "Uneven pavement ahead.",
+                    "This is a school zone."
+                ],
+                correct_answer: 'This is a pedestrian crossover.'
             },
         ],
         test3: [
