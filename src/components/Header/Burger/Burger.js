@@ -4,7 +4,6 @@ import styles from './Burger.module.scss'
 
 function Burger() {
   const [open, setOpen] = useState(false)
-  console.log(false)
   return (
     <>
       <div className={styles.burgerWrap} open={open} onClick={() => setOpen(!open)}>
