@@ -34,12 +34,23 @@ import ds_t2_q13 from "./testsImg/ds_t2_q13.png"
 import ds_t2_q14 from "./testsImg/ds_t2_q14.png"
 import ds_t2_q15 from "./testsImg/ds_t2_q15.png"
 import ds_t2_q16 from "./testsImg/ds_t2_q16.png"
+import ds_t2_q17 from "./testsImg/ds_t2_q17.png"
+import ds_t2_q18 from "./testsImg/ds_t2_q18.png"
+import ds_t2_q19 from "./testsImg/ds_t2_q19.png"
+import ds_t2_q20 from "./testsImg/ds_t2_q20.png"
+
 
 import ds_t3_q1 from "./testsImg/ds_t3_q1.png"
 import ds_t3_q2 from "./testsImg/ds_t3_q2.png"
 import ds_t3_q3 from "./testsImg/ds_t3_q3.png"
 import ds_t3_q4 from "./testsImg/ds_t3_q4.png"
 import ds_t3_q5 from "./testsImg/ds_t3_q5.png"
+import ds_t3_q6 from "./testsImg/ds_t3_q6.png"
+import ds_t3_q7 from "./testsImg/ds_t3_q7.png"
+import ds_t3_q8 from "./testsImg/ds_t3_q8.png"
+import ds_t3_q9 from "./testsImg/ds_t3_q9.png"
+import ds_t3_q10 from "./testsImg/ds_t3_q10.png"
+
 import ds_t4_q1 from "./testsImg/ds_t4_q1.png"
 import ds_t4_q2 from "./testsImg/ds_t4_q2.png"
 import ds_t4_q3 from "./testsImg/ds_t4_q3.png"
@@ -55,6 +66,7 @@ import dr_t1_q2 from "./testsImg/dr_t1_q2.png"
 import dr_t1_q9 from "./testsImg/dr_t1_q9.png"
 import dr_t2_q2 from "./testsImg/dr_t2_q2.png"
 import dr_t2_q4 from "./testsImg/dr_t2_q4.png"
+import dr_t3_q11 from "./testsImg/dr_t3_q11.png"
 import dr_t5_q5 from "./testsImg/dr_t5_q5.png"
 
 
@@ -346,7 +358,8 @@ export const testsArr = {
                     "you are driving too fast."
                 ],
                 correct_answer: 'you cannot stop within the distance that you can see ahead.'
-            }, {
+            },
+            {
                 question: "While driving at night, if you meet an oncoming vehicle with blinding bright lights, what should you do ?",
                 incorrect_answers: [
                     "Look at the headlights of the approaching vehicle.",
@@ -354,7 +367,8 @@ export const testsArr = {
                     "Turn on your high-beam headlights."
                 ],
                 correct_answer: 'Look to the right edge of the roadway.'
-            }, {
+            },
+            {
                 question: "A broken yellow line on your side of the roadway means that you may",
                 incorrect_answers: [
                     "not pass.",
@@ -362,7 +376,8 @@ export const testsArr = {
                     "pass only during daylight hours."
                 ],
                 correct_answer: 'pass if the way is clear.'
-            }, {
+            },
+            {
                 question: "If you are convicted of failing to stop when a police officer gave pursuit, you may face which of the following penalties?",
                 incorrect_answers: [
                     "Up to 6 month in jail",
@@ -370,7 +385,8 @@ export const testsArr = {
                     "Licence suspension for 5 years."
                 ],
                 correct_answer: 'All of the above.'
-            }, {
+            },
+            {
                 question: "Before leaving your vehicle parked on the right side of the street, facing downgrade, you should",
                 incorrect_answers: [
                     "set your parking brake only.",
@@ -378,6 +394,51 @@ export const testsArr = {
                     "leave your front wheels parallel to the curb."
                 ],
                 correct_answer: 'turn your fron wheels to the right and set your parking brake.'
+            },
+            {
+                question: "At an intersection when the signal light is green, which of the following has the right-of-way over all others?",
+                incorrect_answers: [
+                    "Vehicles turning left.",
+                    "Pedestrians crossing againt the light.",
+                    "Vehicles turning right."
+                ],
+                correct_answer: 'Pedestirans crossing with the light.'
+            },
+            {
+                question: "If a level One (Class G1) or Level Two (Class G2) driver accumulates nine or more points within a two-year period, his or her license will be suspended for ",
+                incorrect_answers: [
+                    "15 days.",
+                    "1 year.",
+                    "30 days."
+                ],
+                correct_answer: '60 days.'
+            },
+            {
+                question: "Upon approaching a stop sign, a driver must",
+                incorrect_answers: [
+                    "stop, sound the horn, then proceed.",
+                    "slow down, and if the way is clear, proceed.",
+                    "slow down, sound the horn, and then proceed."
+                ],
+                correct_answer: 'stop, and when it is safe to do so, proceed.'
+            },
+            {
+                question: "When approaching an intersection, you notice the roadway beyond the intersection is blocked with traffic. What should you do ?",
+                incorrect_answers: [
+                    "Sound your horn to warn traffic ahead to move on.",
+                    "Keep as close as possible to the car ahead.",
+                    "Proceed slowly into the intersection untill traffic ahead moves on."
+                ],
+                correct_answer: 'Stop before entering the intersection and wait untill traffic ahead moves on.'
+            },
+            {
+                question: "You are driving on a wet road and have to stop quickly. If your vehicle does not have antilock brakes (ABS), what should you do?",
+                incorrect_answers: [
+                    "Turn off the ignition and apply the hand brake.",
+                    "Brake hard.",
+                    "Pump the brakes."
+                ],
+                correct_answer: 'Apply steady brake pressure, release slightly if the wheels are locking up, nad re-apply.'
             },
 
         ],
@@ -425,6 +486,61 @@ export const testsArr = {
                 "you may turn right"
             ],
             correct_answer: 'all of the above'
+        },
+        {
+            question: "A G1 or G2 driver who is caught drinking and driving will face which of the following penalties?",
+            incorrect_answers: [
+                "An immediate 3-day licence suspension.",
+                "A fine of up to $500 if convicted",
+                "A 30-day license suspension if convicted."
+            ],
+            correct_answer: 'All of the above.'
+        },
+        {
+            question: "If you want to pass a motorcycle, you should",
+            incorrect_answers: [
+                "turn on your high-beam headlights before you pass.",
+                "use half of the motorcycle's lane to pass.",
+                "honk your horn before you pass."
+            ],
+            correct_answer: 'pass it the same way that you would pass a car.'
+        },
+        {
+            question: "If you convicted of fleeing a police officer who signaled you to pull over, your license will be suspended for",
+            incorrect_answers: [
+                "3 years.",
+                "4 years.",
+                "2 years."
+            ],
+            correct_answer: '5 years.'
+        },
+        {
+            question: "Every vehicle must be insured for third-party liability for at least.",
+            incorrect_answers: [
+                "$1,000,000",
+                "$250,000",
+                "$400,000"
+            ],
+            correct_answer: '$200,000'
+        },
+        {
+            question: "It is more dangerous to drive at the maximum speed limit at night than in the daytime because",
+            incorrect_answers: [
+                "the roads are slippery at night.",
+                "your reaction time is four times slower at night.",
+                "some drivers unlawfully drive with parking lights only."
+            ],
+            correct_answer: 'you cannot see as far ahead at night.'
+        },
+        {
+            question: "This driver is using a hand signal. The driver intends to",
+            img: dr_t3_q11,
+            incorrect_answers: [
+                "slow down or stop",
+                "speed up",
+                "turn right."
+            ],
+            correct_answer: 'turn left.'
         },
         ],
         test4: [
@@ -885,6 +1001,46 @@ export const testsArr = {
                 ],
                 correct_answer: 'This is a pedestrian crossover.'
             },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q17,
+                incorrect_answers: [
+                    "There is construction work one kilometre ahead.",
+                    "Keep a certain distance away",
+                    "This lane is closed ahead, merge into another lane."
+                ],
+                correct_answer: 'Follow these signs untill you return to your regular route.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q18,
+                incorrect_answers: [
+                    "Side road near a railway ahead.",
+                    "Pedestrian crosswalk ahead.",
+                    "Intersection ahead."
+                ],
+                correct_answer: 'Railway crossing ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q19,
+                incorrect_answers: [
+                    "One-way street ahead.",
+                    "Hidden intersection ahead.",
+                    "Divided highway ahead."
+                ],
+                correct_answer: 'Narrow roadway ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t2_q20,
+                incorrect_answers: [
+                    "Paved surface ends ahead.",
+                    "Divided roadway ahead.",
+                    "Underpass ahead."
+                ],
+                correct_answer: 'Narrow bridge ahead.'
+            },
         ],
         test3: [
             {
@@ -936,6 +1092,56 @@ export const testsArr = {
                     "Restroom availability"
                 ],
                 correct_answer: 'Disabled parking area'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q6,
+                incorrect_answers: [
+                    "Stay to the right of the centre island.",
+                    "Keep right.",
+                    "You must turn right."
+                ],
+                correct_answer: 'There is a sharp curve to the right.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q7,
+                incorrect_answers: [
+                    "Passing is not allowed.",
+                    "This is a wheelchair crossing.",
+                    "Watch for people with disabilities."
+                ],
+                correct_answer: 'School crossing is ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q8,
+                incorrect_answers: [
+                    "Hidden intersection ahead.",
+                    "Road slippery when wet.",
+                    "Narrow road ahead."
+                ],
+                correct_answer: 'Winding road.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q9,
+                incorrect_answers: [
+                    "All turns are allowed.",
+                    "You may not park between here and the corner.",
+                    "Rights turns are allowed."
+                ],
+                correct_answer: 'You must turn right.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q10,
+                incorrect_answers: [
+                    "A hiking trail.",
+                    "School zone.",
+                    "Playground zone."
+                ],
+                correct_answer: 'Pedestrians ahead.'
             },
         ],
         test4: [
