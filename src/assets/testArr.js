@@ -50,6 +50,17 @@ import ds_t3_q7 from "./testsImg/ds_t3_q7.png"
 import ds_t3_q8 from "./testsImg/ds_t3_q8.png"
 import ds_t3_q9 from "./testsImg/ds_t3_q9.png"
 import ds_t3_q10 from "./testsImg/ds_t3_q10.png"
+import ds_t3_q11 from "./testsImg/ds_t3_q11.png"
+import ds_t3_q12 from "./testsImg/ds_t3_q12.png"
+import ds_t3_q13 from "./testsImg/ds_t3_q13.png"
+import ds_t3_q14 from "./testsImg/ds_t3_q14.png"
+import ds_t3_q15 from "./testsImg/ds_t3_q15.png"
+import ds_t3_q16 from "./testsImg/ds_t3_q16.png"
+import ds_t3_q17 from "./testsImg/ds_t3_q17.png"
+import ds_t3_q18 from "./testsImg/ds_t3_q18.png"
+import ds_t3_q19 from "./testsImg/ds_t3_q19.png"
+import ds_t3_q20 from "./testsImg/ds_t3_q20.png"
+
 
 import ds_t4_q1 from "./testsImg/ds_t4_q1.png"
 import ds_t4_q2 from "./testsImg/ds_t4_q2.png"
@@ -67,6 +78,12 @@ import dr_t1_q9 from "./testsImg/dr_t1_q9.png"
 import dr_t2_q2 from "./testsImg/dr_t2_q2.png"
 import dr_t2_q4 from "./testsImg/dr_t2_q4.png"
 import dr_t3_q11 from "./testsImg/dr_t3_q11.png"
+import dr_t3_q19 from "./testsImg/dr_t3_q19.png"
+import dr_t4_q9 from "./testsImg/dr_t4_q9.png"
+import dr_t4_q10 from "./testsImg/dr_t4_q10.png"
+import dr_t4_q12 from "./testsImg/dr_t4_q12.png"
+
+
 import dr_t5_q5 from "./testsImg/dr_t5_q5.png"
 
 
@@ -542,6 +559,88 @@ export const testsArr = {
             ],
             correct_answer: 'turn left.'
         },
+        {
+            question: "While driving on a two-way street, you hear the siren of an approaching emergency vehicle. What does the law require you to do?",
+            incorrect_answers: [
+                "Signal the driver to pass.",
+                "Continue at the same speed.",
+                "Speed up and get out of the way."
+            ],
+            correct_answer: 'Pull to the right as far as possible and stop.'
+        },
+        {
+            question: "When the driver of another vehicle is about to pass your vehicle on your left, what should you do?",
+            incorrect_answers: [
+                "Speed up so that passing is not necessary.",
+                "Signal the other driver not to pass.",
+                "Move to the left and allow the vehicle to pass."
+            ],
+            correct_answer: 'Move to the right and allow vehicle to pass.'
+        },
+        {
+            question: "When a streetcar is stopped to pick up or discharge passengers where there is a safety island, what does the law require you to do?",
+            incorrect_answers: [
+                "Sound your horn and pass with caution.",
+                "Stop at least two metres behind the rear doors of the streetcar.",
+                "Stop at least two metres behind the safety island."
+            ],
+            correct_answer: 'Pass with caution and be ready to stop if a pedestrian makes sudden or unexpected moves.'
+        },
+        {
+            question: "Which of the following statements about cyclist is FALSE?",
+            incorrect_answers: [
+                "You should leave at least one metre of space when passing a cyclist.",
+                "Do not follow too closely behind cyclist.",
+                "Before passing a cyclist, change lanes if possible."
+            ],
+            correct_answer: 'Cyclist are prohibited from using the left-hand to turn left.'
+        },
+        {
+            question: "If you are convicted of careless driving, you will receive six demerit points and you may face",
+            incorrect_answers: [
+                "a jail sentence of up to six months.",
+                "licence suspension for up to two years.",
+                "a fine of up to $2,000."
+            ],
+            correct_answer: 'all of the above.'
+        },
+        {
+            question: "If a fully licensed driver accumulates 15 or more demerit points on his or her record, the driver's licence will be suspended for",
+            incorrect_answers: [
+                "60 days.",
+                "90 days.",
+                "14 days."
+            ],
+            correct_answer: '30 days.'
+        },
+        {
+            question: "You are approaching a railway crossing. The crossing signals are warning that a train is approaching. What should you do?",
+            incorrect_answers: [
+                "Increase your speed and cross the tracks as quickly as possible.",
+                "Stop at least 2 metres from the nearest rail.",
+                "Slow down and proceed with caution."
+            ],
+            correct_answer: 'Stop at least 5 metres from the nearest rail.'
+        },
+        {
+            question: "This driver is using a hand signal. The driver intends to",
+            img: dr_t3_q19,
+            incorrect_answers: [
+                "turn right.",
+                "speed up.",
+                "turn left."
+            ],
+            correct_answer: 'slow down or stop.'
+        },
+        {
+            question: "If you miss your exit on an expressway, what should you do?",
+            incorrect_answers: [
+                "Make a U-turn.",
+                "Stop on the shoulder and check your map.",
+                "Back up if there are no other vehicles around."
+            ],
+            correct_answer: 'Take the next exit.'
+        },
         ],
         test4: [
             {
@@ -588,6 +687,72 @@ export const testsArr = {
                     "Neither jail time nor a fine"
                 ],
                 correct_answer: 'Either jail time or fine or both'
+            },
+            {
+                question: "Hydroplaning occurs during heavy rain when a vehicle's tires ride up above the water on the roadway. To help prevent hydroplaning, you should",
+                incorrect_answers: [
+                    "ensure that the tires on your vehicle are inflated to the proper tire pressures.",
+                    "ensure that the tires on your vehicle have good tread depth.",
+                    "slow down when driving in the rain."
+                ],
+                correct_answer: 'do all of the above.'
+            },
+            {
+                question: "Which of the following are signs of aggressive driving?",
+                incorrect_answers: [
+                    "Avoiding eye contact.",
+                    "Frequent shoulder checks.",
+                    "All of the above."
+                ],
+                correct_answer: 'Preventing other drivers from passing.'
+            },
+            {
+                question: "When passing a cyclist, you must leave at least _____ of space between your vehicle and the cyclist.",
+                incorrect_answers: [
+                    "2 metres.",
+                    "1.5 metres.",
+                    "0.5 metre."
+                ],
+                correct_answer: '1 metre'
+            },
+            {
+                question: "What do broken white lines indicate?",
+                img: dr_t4_q9,
+                incorrect_answers: [
+                    "They indicate that passing is prohibited.",
+                    "They separate lanes of traffic travelling in opposite directions.",
+                    "They mark the right edge of the roadway."
+                ],
+                correct_answer: 'They separate lanes of traffic travelling in the same direction.'
+            },
+            {
+                question: "To get your vehicle out of a skid, you should",
+                img: dr_t4_q10,
+                incorrect_answers: [
+                    "steer straight ahead.",
+                    "apply the brakes hard.",
+                    "steer in the opposite direction of the skid."
+                ],
+                correct_answer: 'steer in the direction you want to go.'
+            },
+            {
+                question: "After a nine-demerit-point interview of a fully licensed driver, the Ministry of Transportation may suspend the driver's licence for which of the following reasons?",
+                incorrect_answers: [
+                    "The driver has less than 5 years' driving experience.",
+                    "The driver does not need the licence for business purposes.",
+                    "All of the above are valid reasons for suspension."
+                ],
+                correct_answer: 'The driver failed to explain satisfactorily why his or her licence should not be suspended.'
+            },
+            {
+                question: "This driver is using a hand signal. The driver intends to",
+                img: dr_t4_q12,
+                incorrect_answers: [
+                    "turn left.",
+                    "speed up.",
+                    "slow down or stop."
+                ],
+                correct_answer: 'turn left.'
             },
         ],
         test5: [
@@ -1142,6 +1307,106 @@ export const testsArr = {
                     "Playground zone."
                 ],
                 correct_answer: 'Pedestrians ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q11,
+                incorrect_answers: [
+                    "A hiking trail.",
+                    "School zone.",
+                    "Playground zone."
+                ],
+                correct_answer: 'Pedestrians ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q12,
+                incorrect_answers: [
+                    "Road ahead turns left, then right.",
+                    "Narrow road ahead.",
+                    "Intersection ahead."
+                ],
+                correct_answer: 'Road ahead turns right, then left.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q13,
+                incorrect_answers: [
+                    "Maximum safe speed on the ramp. ",
+                    "A speed limit change ahead.",
+                    "Maximum safe speed for the curve."
+                ],
+                correct_answer: 'Maximum speed limit on the highway.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q14,
+                incorrect_answers: [
+                    "Road under construction.",
+                    "Narrow bridge ahead.",
+                    "Divided highway ahead."
+                ],
+                correct_answer: 'Divided highway ends.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q15,
+                incorrect_answers: [
+                    "You must turn left.",
+                    "You must turn right.",
+                    "You must not turn right."
+                ],
+                correct_answer: 'You must not turn left.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q16,
+                incorrect_answers: [
+                    "This is landing area for helicopters.",
+                    "Airplanes fly low overhead.",
+                    "Airplanes land on this road."
+                ],
+                correct_answer: 'This is the route to an airport.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q17,
+                incorrect_answers: [
+                    "There is a snowmobile repair shop ahead.",
+                    "There is a snowmobile parking ahead.",
+                    "Snowmobiles are not allowed ahead."
+                ],
+                correct_answer: 'Snowmobiles cross this road ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q18,
+                incorrect_answers: [
+                    "Indicates an upcoming railway crossing.",
+                    "Shows directions to nearby towns or cities.",
+                    "Shows distances to towns or cities."
+                ],
+                correct_answer: 'Shows the exits on the upcoming roundabout and where they will take you.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q19,
+                incorrect_answers: [
+                    "Railway crossing ahead.",
+                    "Hidden intersection ahead.",
+                    "Narrow roadway ahead."
+                ],
+                correct_answer: 'Intersection ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t3_q20,
+                incorrect_answers: [
+                    "No children allowed.",
+                    "No bicycles allowed.",
+                    "Only-dogs allowed."
+                ],
+                correct_answer: 'No pedestrians allowed.'
             },
         ],
         test4: [
