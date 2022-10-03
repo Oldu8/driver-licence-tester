@@ -67,6 +67,13 @@ import ds_t4_q2 from "./testsImg/ds_t4_q2.png"
 import ds_t4_q3 from "./testsImg/ds_t4_q3.png"
 import ds_t4_q4 from "./testsImg/ds_t4_q4.png"
 import ds_t4_q5 from "./testsImg/ds_t4_q5.png"
+import ds_t4_q6 from "./testsImg/ds_t4_q6.png"
+import ds_t4_q7 from "./testsImg/ds_t4_q7.png"
+import ds_t4_q8 from "./testsImg/ds_t4_q8.png"
+import ds_t4_q9 from "./testsImg/ds_t4_q9.png"
+import ds_t4_q10 from "./testsImg/ds_t4_q10.png"
+
+
 import ds_t5_q1 from "./testsImg/ds_t5_q1.png"
 import ds_t5_q2 from "./testsImg/ds_t5_q2.png"
 import ds_t5_q3 from "./testsImg/ds_t5_q3.png"
@@ -82,9 +89,10 @@ import dr_t3_q19 from "./testsImg/dr_t3_q19.png"
 import dr_t4_q9 from "./testsImg/dr_t4_q9.png"
 import dr_t4_q10 from "./testsImg/dr_t4_q10.png"
 import dr_t4_q12 from "./testsImg/dr_t4_q12.png"
-
-
+import dr_t4_q18 from "./testsImg/dr_t4_q18.png"
+import dr_t4_q20 from "./testsImg/dr_t4_q20.png"
 import dr_t5_q5 from "./testsImg/dr_t5_q5.png"
+import dr_t5_q6 from "./testsImg/dr_t5_q6.png"
 
 
 
@@ -754,6 +762,80 @@ export const testsArr = {
                 ],
                 correct_answer: 'turn left.'
             },
+            {
+                question: "If a fully licensed driver is convicted of using a hand-held electronic device while driving, they will face which of the following penalties for a first offence?",
+                incorrect_answers: [
+                    "A 30-day licence suspension.",
+                    "A fine of up to $500 and 2 demerit points.",
+                    "None of the above."
+                ],
+                correct_answer: 'A fine of up to $1,000 and 3 demerit points.'
+            },
+            {
+                question: "You are approaching an intersection where there is no signal light or police officer. A pedestrian is in the crosswalk on your side of the street. You should",
+                incorrect_answers: [
+                    "increase your speed and pass the pedestrian.",
+                    "slow down and drive with increased cation.",
+                    "sound your horn to warn the pedestrian."
+                ],
+                correct_answer: 'yield to pedestrian.'
+            },
+            {
+                question: "If you are approaching an intersection at which the traffic lights are not working, you should",
+                incorrect_answers: [
+                    "yield to the traffic to your right.",
+                    "slow down and proceed with caution.",
+                    "stop until no other vehicles are approaching and then go."
+                ],
+                correct_answer: 'treat it as there were all-way stop signs.'
+            },
+            {
+                question: "If you are involved in an accident in which someone is injured, you must",
+                incorrect_answers: [
+                    "report the accident to the Ministry of Transportation withing 48 hours.",
+                    "report the accident to the Ministry of Transportation immediately.",
+                    "report the accident to the police within 48 hours."
+                ],
+                correct_answer: "report accident to the police immediately."
+            },
+            {
+                question: "Snow-removal vehicles on public roadways are equipped with flashing _____ lights.",
+                incorrect_answers: [
+                    "red",
+                    "orange",
+                    "yellow"
+                ],
+                correct_answer: 'blue'
+            },
+            {
+                question: "What does this sign mean ?",
+                img: dr_t4_q18,
+                incorrect_answers: [
+                    "When a school bus stops with its red lights flashing and its stop sign arm swung out, you must stop at any point before reaching the bus.",
+                    "When a school bus stops with its red lights flashing and its stop sign arm swung out, you may proceed if you're on the opposite side of the road.",
+                    "When a school bus stops with its red lights flashing and its stop sign arm swung out, you must slow down to 25 km/h and proceed with caution."
+                ],
+                correct_answer: 'When a school bus stops with its red lights flashing and its stop sign arm swung out, you must stop at least 20 metres from the bus.'
+            },
+            {
+                question: "A streetcar has stopped to take on or discharge passengers where there is no safety zone. What does the law require you to do before passsing the streetcar?",
+                incorrect_answers: [
+                    "Pass on the left side when the way is clear.",
+                    "Sound your horn and pass with caution.",
+                    "Stop behind the rear of the streetcar and then proceed when its safe to do so."
+                ],
+                correct_answer: 'Stop two metres behind the rear doors where passengers are getting on or off, and proceed only when it is safe to do so.'
+            },
+            {
+                question: "Unless otherwise posted, the maximum speed limit in cities, towns and villages is",
+                img: dr_t4_q20,
+                incorrect_answers: [
+                    "40 km/h",
+                    "60  km/h",
+                    "30  km/h"
+                ],
+                correct_answer: '50  km/h'
+            },
         ],
         test5: [
             {
@@ -801,6 +883,16 @@ export const testsArr = {
                     "Stop and then you may turn in the direction of the arrow."
                 ],
                 correct_answer: 'You may turn in the direction of the arrow.'
+            },
+            {
+                question: "If you fail to stop for a stopped school bus whose red lights are flashing, you will face which of the following penalties for a first offense?",
+                img: dr_t5_q6,
+                incorrect_answers: [
+                    "A fine up to $500 and 4 demerit points.",
+                    "A requirement to retake your road test.",
+                    "A one-year jail sentence."
+                ],
+                correct_answer: "A fine up to $2,000 and 6 demerit points."
             },
         ]
     },
@@ -1459,6 +1551,56 @@ export const testsArr = {
                     "Steep hill ahead"
                 ],
                 correct_answer: 'Possible falling rocks ahead'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q6,
+                incorrect_answers: [
+                    "Buses are not allowed in this lane during the times and days posted.",
+                    "No stopping is allowed during the times and days posted.",
+                    "Do not enter during the times and days posted."
+                ],
+                correct_answer: 'Only certain types of vehicles are allowed in this lane during the times and days posted.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q7,
+                incorrect_answers: [
+                    "This lane is for bicycles only.",
+                    "No pedestrians are allowed on this road.",
+                    "There is a bicycle crossing ahead."
+                ],
+                correct_answer: 'This road is an official bicycle route.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q8,
+                incorrect_answers: [
+                    "This is a pedestiran crossover. Be prepared to stop and yield the right-of-way to pedestrians.",
+                    "There is a railway crossing ahead. Be alert for trains.",
+                    "There is a hazard close to the edge of the road. The downward lines show the side on which you may safety pass."
+                ],
+                correct_answer: 'Vehicles cannot change lanes into or out of a high-occupancy vehicle (HOV) lane in this area.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q9,
+                incorrect_answers: [
+                    "No left turns are allowed",
+                    "No U-turns are allowed.",
+                    "There is a hidden intersection ahead."
+                ],
+                correct_answer: 'There is merging traffic ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q10,
+                incorrect_answers: [
+                    "You may exit if you remain in the right-hand lane.",
+                    "You must not drive in the right-hand lane under any circumstances.",
+                    "This is the end of the highway; you must move into the right-hand lane."
+                ],
+                correct_answer: 'You must exit if you remain in the right-hand lane.'
             },
         ],
         test5: [
