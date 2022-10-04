@@ -894,6 +894,89 @@ export const testsArr = {
                 ],
                 correct_answer: "A fine up to $2,000 and 6 demerit points."
             },
+            {
+                question: "In Ontario, when driving at night, you dim your headlights",
+                img: dr_t5_q7,
+                incorrect_answers: [
+                    "whenever you are within 60 metres of an oncoming vehicle or with 150 metres of a vehicle you are following.",
+                    "whenever you are within 400 metres of another vehicle.",
+                    "whenever you are within 150 metres of another vehicle."
+                ],
+                correct_answer: "whenever you are within 150 metres of an oncoming vehicle or with 60 metres of a vehicle you are following."
+            },
+            {
+                question: "A novice driver who is convicted of distracted driving will face which of the following penalties for a third offence?",
+                incorrect_answers: [
+                    "A fine, licence suspension and 6 demerit points.",
+                    "A fine, licence suspension nad 3 demerit points.",
+                    "Licence cancellation and removal from the Graduated Licensing System, but not fine."
+                ],
+                correct_answer: "A fine, licence cancellation and removal from the Graduated Licensing System."
+            },
+            {
+                question: "When a right turn on a red signal light is permitted, what must you do before entering the intersection and making the turn?",
+                incorrect_answers: [
+                    "Slow down and stop.",
+                    "Stop, then edge into traffic.",
+                    "Signal and slow down."
+                ],
+                correct_answer: "Signal and stop."
+            },
+            {
+                question: "A G2 driver age 19 or younger who has 6 months or less of driving experience may carry _____ unrelated passenger(s) age 19 or younger between midnight and 5.00 a.m.",
+                incorrect_answers: [
+                    "2",
+                    "4",
+                    "3"
+                ],
+                correct_answer: "1"
+            },
+            {
+                question: "You should maintain a following distance of at least _____ behind the vehicle in front of you.",
+                incorrect_answers: [
+                    "5 seconds.",
+                    "6  seconds.",
+                    "7  seconds."
+                ],
+                correct_answer: "2 seconds."
+            },
+            {
+                question: "What documents may a police officer require a motor vehicle onwer to produce?",
+                incorrect_answers: [
+                    "The motor vehicle ownership document.",
+                    "If he or she is operating a motor vehicle, a valid driver's licence.",
+                    "If the motor vehicle is insured, a liability insurance card."
+                ],
+                correct_answer: 'All of the above.'
+            },
+            {
+                question: "When passing a cyclist, failing to leave at least 1 metre of space between your vehicle and the cyclist may result in a fine and ____ demerit point(s) on your driver's record.",
+                incorrect_answers: [
+                    "0",
+                    "1",
+                    "3"
+                ],
+                correct_answer: '2'
+            },
+            {
+                question: "",
+                incorrect_answers: [
+                    "",
+                    "",
+                    ""
+                ],
+                correct_answer: ''
+            },
+            {
+                question: "",
+                incorrect_answers: [
+                    "",
+                    "",
+                    ""
+                ],
+                correct_answer: ''
+            },
+
         ]
     },
     drivingSigns: {
@@ -1602,6 +1685,106 @@ export const testsArr = {
                 ],
                 correct_answer: 'You must exit if you remain in the right-hand lane.'
             },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q11,
+                incorrect_answers: [
+                    "Be cautious of pedestrians.",
+                    "Watch for traffic signals.",
+                    "Do not slow down."
+                ],
+                correct_answer: 'Do not block the intersection.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q12,
+                incorrect_answers: [
+                    "This is a high-crime area.",
+                    "Do not enter this area.",
+                    "It is safe to enter this area."
+                ],
+                correct_answer: 'Be more aware of pedestrians and your speed in this area.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q13,
+                incorrect_answers: [
+                    "Truck entrance ahead on the right.",
+                    "Bus entrance ahead on the right.",
+                    "None of the above."
+                ],
+                correct_answer: 'Fire truck entrance ahead on the right.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q14,
+                incorrect_answers: [
+                    "A vehicle carrying dangerous goods.",
+                    "An emergency vehicle.",
+                    "A fast-moving vehicle."
+                ],
+                correct_answer: 'A slow-moving vehicle.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q15,
+                incorrect_answers: [
+                    "The highway ends ahead; you must move into the righ-hand lane.",
+                    "You may exit if you remain in the right-hand lane.",
+                    "You must not drive in the right-hand lane."
+                ],
+                correct_answer: 'This is a two-way left-turn lane.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q16,
+                incorrect_answers: [
+                    "Safety check ahead.",
+                    "No pavement 500 feet ahead.",
+                    "Bumpy road ahead."
+                ],
+                correct_answer: 'Steep hill ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q17,
+                incorrect_answers: [
+                    "There is a snowmobile repair shop ahead.",
+                    "Only snowmobiles may park here.",
+                    "Snowmobiles may not use this road."
+                ],
+                correct_answer: 'Snowmobiles may use this road.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q18,
+                incorrect_answers: [
+                    "End of 50 km/h zone.",
+                    "Speed limit for rural school zone.",
+                    "Maximum speed of 50 km/h from this sign to the next one."
+                ],
+                correct_answer: 'Speed limit changes to 50 km/h ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q19,
+                incorrect_answers: [
+                    "Factory ahead.",
+                    "Construction zone ahead.",
+                    "Bridge or viaduct ahead."
+                ],
+                correct_answer: 'Bumpy or uneven pavement ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t4_q20,
+                incorrect_answers: [
+                    "Keep left.",
+                    "Keep right.",
+                    "Do not pass."
+                ],
+                correct_answer: 'Do not enter.'
+            },
         ],
         test5: [
             {
@@ -1653,6 +1836,16 @@ export const testsArr = {
                     "Slow down and yield to approaching vehicles"
                 ],
                 correct_answer: 'Stop and yield to approaching vehicles'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q6,
+                incorrect_answers: [
+                    "Two lanes will merge into one.",
+                    "Two lanes are closed ahead.",
+                    "This is a highway with two express lanes."
+                ],
+                correct_answer: 'Two or more occupants must be in the vehicle to use this lane.'
             },
         ]
     }
