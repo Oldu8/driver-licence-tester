@@ -72,6 +72,17 @@ import ds_t4_q7 from "./testsImg/ds_t4_q7.png"
 import ds_t4_q8 from "./testsImg/ds_t4_q8.png"
 import ds_t4_q9 from "./testsImg/ds_t4_q9.png"
 import ds_t4_q10 from "./testsImg/ds_t4_q10.png"
+import ds_t4_q11 from "./testsImg/ds_t4_q11.png"
+import ds_t4_q12 from "./testsImg/ds_t4_q12.png"
+import ds_t4_q13 from "./testsImg/ds_t4_q13.png"
+import ds_t4_q14 from "./testsImg/ds_t4_q14.png"
+import ds_t4_q15 from "./testsImg/ds_t4_q15.png"
+import ds_t4_q16 from "./testsImg/ds_t4_q16.png"
+import ds_t4_q17 from "./testsImg/ds_t4_q17.png"
+import ds_t4_q18 from "./testsImg/ds_t4_q18.png"
+import ds_t4_q19 from "./testsImg/ds_t4_q19.png"
+import ds_t4_q20 from "./testsImg/ds_t4_q20.png"
+
 
 
 import ds_t5_q1 from "./testsImg/ds_t5_q1.png"
@@ -79,6 +90,8 @@ import ds_t5_q2 from "./testsImg/ds_t5_q2.png"
 import ds_t5_q3 from "./testsImg/ds_t5_q3.png"
 import ds_t5_q4 from "./testsImg/ds_t5_q4.png"
 import ds_t5_q5 from "./testsImg/ds_t5_q5.png"
+import ds_t5_q6 from "./testsImg/ds_t5_q6.png"
+
 
 import dr_t1_q2 from "./testsImg/dr_t1_q2.png"
 import dr_t1_q9 from "./testsImg/dr_t1_q9.png"
@@ -93,6 +106,8 @@ import dr_t4_q18 from "./testsImg/dr_t4_q18.png"
 import dr_t4_q20 from "./testsImg/dr_t4_q20.png"
 import dr_t5_q5 from "./testsImg/dr_t5_q5.png"
 import dr_t5_q6 from "./testsImg/dr_t5_q6.png"
+import dr_t5_q7 from "./testsImg/dr_t5_q7.png"
+
 
 
 
