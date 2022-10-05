@@ -1,5 +1,4 @@
 import styles from './RulesPage.module.scss';
-import { Link } from 'react-router-dom';
 
 function RulesPage() {
   return (

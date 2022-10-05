@@ -2,12 +2,11 @@ import styles from './ToggleBlock.module.scss';
 import { useState } from 'react';
 import TestBlock from '../TestBlock/TestBlock';
 import { Accordion } from '@mui/material';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 function ToggleBlock({ title, category }) {
 

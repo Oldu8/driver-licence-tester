@@ -2,14 +2,11 @@ import styles from './ResultPage.module.scss';
 import resultBanner from "../../assets/images/resultBanner.svg"
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 import { useSelector } from 'react-redux'
 import { StyledTableCellHead, StyledTableRow, StyledTableCellBody } from "../../functions/funcForMUITable";
-import { padding } from '@mui/system';
 import { Button } from '@mui/material';
 
 

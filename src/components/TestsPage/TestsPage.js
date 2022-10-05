@@ -1,9 +1,8 @@
 import styles from './TestsPage.module.scss';
-import { Link } from 'react-router-dom';
 import ToggleBlock from '../ToggleBlock/ToggleBlock';
 import testBanner from "../../assets/images/testBanner.svg"
 
-function TestsPage({ }) {
+function TestsPage() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>

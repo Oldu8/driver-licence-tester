@@ -1,7 +1,7 @@
 import styles from './TestBlock.module.scss';
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from 'react-redux'
-import { setStartStatus, setClearResults } from '../../redux/testCounterSlice'
+import { setStartStatus } from '../../redux/testCounterSlice'
 
 
 function TestBlock({ title, number, category, setCategory, setTestNumber }) {
