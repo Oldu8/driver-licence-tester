@@ -1,6 +1,8 @@
 import styles from './RulesPage.module.scss';
 import rulesBanner from '../../assets/images/rulesBanner.svg'
+import rulesSmallBanner from '../../assets/images/rulesSmallBanner.svg'
 
+import { Link } from 'react-router-dom';
 
 function RulesPage() {
   return (
@@ -64,7 +66,36 @@ function RulesPage() {
             </li>
           </ul>
         </article>
-
+        <article className={styles.article}>
+          <h2 className={styles.subHeadline}>
+            What is requirements for G Full Class for new drivers ?
+          </h2>
+          <p className={styles.subText}>
+            As said in official website of DriveTest: <quote>In Ontario, driving is a privilege that must be earned.</quote> We fully agree with this statement. So the main requirements for new driver are:
+          </p>
+          <span className={styles.boxWithImg}>
+            <div className={styles.imageContainer}>
+              <img src={rulesSmallBanner} className={styles.imgSmall} alt='rules banner'></img>
+            </div>
+            <ul className={styles.requirements}>
+              <li className={styles.li2}>
+                You must be at least 16 old at the time of your application in DriveTest Service.
+              </li>
+              <li className={styles.li2}>
+                You have to meet vision standarts that was by the Ministry of Transportation. Here is the <a href='https://drivetest.ca/tests/vision-tests/'>link</a> about this requirements.
+              </li>
+              <li className={styles.li2}>
+                You have to pass a knowledge test about the driving rules and road signs in Ontario. Here we can help with our tests. You can find list of tests on <Link to='/tests'>Test Page</Link>.
+              </li>
+              <li className={styles.li2}>
+                You have to pass G2 road test in the city.
+              </li>
+              <li className={styles.li2}>
+                You have to pass G Full road test outside the city and on the highway.
+              </li>
+            </ul>
+          </span>
+        </article>
       </div>
     </section>
   );
