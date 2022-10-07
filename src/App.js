@@ -10,6 +10,7 @@ import ResultPage from './components/ResultPage/ResultPage';
 import RulesPage from './components/RulesPage/RulesPage';
 
 function App() {
+  /// zapros na avtorizaciyu
 
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
             <Route path='/quiz' element={<QuizPage />}></Route>
             <Route path='/tests' element={<TestsPage />}></Route>
             <Route path='/info' element={<InfoPage />}></Route>
+            {/* <Route path='/page/admin' element={<div>Admin panel</div>}></Route> */}
           </Routes>
         </div>
         <Footer />

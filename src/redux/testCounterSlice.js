@@ -1,65 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { current } from '@reduxjs/toolkit'
 
+const createInitialTest = () => ({
+    status: 'Not started',
+    correct: 0,
+    incorrect: 0,
+});
+const createRules = () => {
+    return Array.from(new Array(5), (_, i) => i).reduce((acc, item, index) => {
+        acc[`test${index + 1}`] = createInitialTest()
+        return acc
+    }, {})
+}
 
 const testCounterSlice = createSlice({
     name: "results",
     initialState: {
         testsData: {
-            drivingRules: {
-                test1: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test2: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test3: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test4: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test5: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-            },
-            drivingSigns: {
-                test1: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test2: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test3: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test4: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-                test5: {
-                    status: 'Not started',
-                    correct: 0,
-                    incorrect: 0,
-                },
-            }
+            drivingRules: createRules(),
+            drivingSigns: createRules(),
         }
     },
     reducers: {
