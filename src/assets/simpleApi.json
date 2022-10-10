@@ -1,0 +1,16 @@
+[
+  [
+    {
+      "id": 1,
+      "question": "In which of the following locations is it dangerous or unlawful to make a U-turn ?",
+      "category": "drivingRules",
+      "testNumber": "test1",
+      "incorrect_answers": [
+        "In a curve or on a hill, where visibility is less then 150 meteres in either direction",
+        "On a railway crossing or within 30 meteres of a railway crossing",
+        "Within 150 metres of a bridge, viaduct, or tunnel if the driver's view is obstructed"
+      ],
+      "correct_answer": "In all of the above locations"
+    }
+  ]
+]

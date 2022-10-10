@@ -91,7 +91,19 @@ import ds_t5_q3 from "./testsImg/ds_t5_q3.png"
 import ds_t5_q4 from "./testsImg/ds_t5_q4.png"
 import ds_t5_q5 from "./testsImg/ds_t5_q5.png"
 import ds_t5_q6 from "./testsImg/ds_t5_q6.png"
-
+import ds_t5_q7 from "./testsImg/ds_t5_q7.png"
+import ds_t5_q9 from "./testsImg/ds_t5_q9.png"
+import ds_t5_q10 from "./testsImg/ds_t5_q10.png"
+import ds_t5_q11 from "./testsImg/ds_t5_q11.png"
+import ds_t5_q12 from "./testsImg/ds_t5_q12.png"
+import ds_t5_q13 from "./testsImg/ds_t5_q13.png"
+import ds_t5_q14 from "./testsImg/ds_t5_q14.png"
+import ds_t5_q15 from "./testsImg/ds_t5_q15.png"
+import ds_t5_q16 from "./testsImg/ds_t5_q16.png"
+import ds_t5_q17 from "./testsImg/ds_t5_q17.png"
+import ds_t5_q18 from "./testsImg/ds_t5_q18.png"
+import ds_t5_q19 from "./testsImg/ds_t5_q19.png"
+import ds_t5_q20 from "./testsImg/ds_t5_q20.png"
 
 import dr_t1_q2 from "./testsImg/dr_t1_q2.png"
 import dr_t1_q9 from "./testsImg/dr_t1_q9.png"
@@ -974,22 +986,76 @@ export const testsArr = {
                 correct_answer: '2'
             },
             {
-                question: "",
+                question: "At an intersection where there is a flashing amber (yellow) traffic light, you must",
                 incorrect_answers: [
-                    "",
-                    "",
-                    ""
+                    "continue at the same speed.",
+                    "stop if you're making a left turn.",
+                    "stop if you're making a right turn."
                 ],
-                correct_answer: ''
+                correct_answer: 'slow down and proceed with caution.'
             },
             {
-                question: "",
+                question: "In Ontario, when driving at night, you must dim your headlights (use low beams) whenever you are following another vehicle within",
                 incorrect_answers: [
-                    "",
-                    "",
-                    ""
+                    "500 metres.",
+                    "120 metres.",
+                    "150 metres."
                 ],
-                correct_answer: ''
+                correct_answer: '60 metres.'
+            },
+            {
+                question: "Under what circumstances may a driver's licence be cancelled?",
+                incorrect_answers: [
+                    "For failure to satisfactorily complete a driver re-examination.",
+                    "For failure to attend a driver re-examination.",
+                    "For possession of an altered driver's licence."
+                ],
+                correct_answer: 'Any of the above circumstances.'
+            },
+            {
+                question: "Passing another vehicle on the right side",
+                incorrect_answers: [
+                    "is permitted on any street or highway.",
+                    "is permitted, provided it is possible to do so by driving on the shoulder of the road.",
+                    "is not permitted."
+                ],
+                correct_answer: 'is permitted when the street or highway has two or more lanes of traffic in the direction in which you are travelling.'
+            },
+            {
+                question: "Why is is necessary to look over your shoulder when changing lanes?",
+                incorrect_answers: [
+                    "It will help you see who is driving.",
+                    "It is good exercise for your neck.",
+                    "All of the above are valid reasons."
+                ],
+                correct_answer: 'Your mirrors always have blind spots. '
+            },
+            {
+                question: "You may not park within ____ of a fire hydrant. ",
+                incorrect_answers: [
+                    "20 metres.",
+                    "5 metres.",
+                    "15 metres."
+                ],
+                correct_answer: '3 metres.'
+            },
+            {
+                question: "If someone is tailgating you, what should you do?",
+                incorrect_answers: [
+                    "Pull over to let the tailgater pass.",
+                    "Move into another lane when it is safe to do so.",
+                    "Increase your following distance behind the vehicle in front of you."
+                ],
+                correct_answer: 'Do any of the above.'
+            },
+            {
+                question: "While driving, a Class G1 learner must be supervised by an accompanying driver. The blood-alcohol level of the accompanying driver must be less than.",
+                incorrect_answers: [
+                    "0.02%",
+                    "0.08%",
+                    "0.07%"
+                ],
+                correct_answer: '0.05%'
             },
 
         ]
@@ -1862,16 +1928,145 @@ export const testsArr = {
                 ],
                 correct_answer: 'Two or more occupants must be in the vehicle to use this lane.'
             },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q7,
+                incorrect_answers: [
+                    "The road is slippery when wet.",
+                    "Drive with caution.",
+                    "No standing allowed here."
+                ],
+                correct_answer: 'Share the road with oncoming traffic.'
+            },
+            {
+                question: "When approaching a Merging Traffic sign, you should",
+                incorrect_answers: [
+                    "honk you horn.",
+                    "stop your vehicle before proceeding.",
+                    "let the cars behind you go first."
+                ],
+                correct_answer: 'adjust your speed and position.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q9,
+                incorrect_answers: [
+                    "Do not turn left except during the times shown.",
+                    "Do not turn left.",
+                    "Do not make a U-turn except during the times shown."
+                ],
+                correct_answer: 'Do not turn left during times shown.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q10,
+                incorrect_answers: [
+                    "Bridge crossing ahead.",
+                    "Gravel road ahead.",
+                    "None of the above."
+                ],
+                correct_answer: 'Milled or grooved pavement ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q11,
+                incorrect_answers: [
+                    "No parking.",
+                    "No left turns.",
+                    "Bicycles not allowed."
+                ],
+                correct_answer: 'Bicycle crossing ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q12,
+                incorrect_answers: [
+                    "Keep to the right of the traffic island.",
+                    "Vehicles in this lane must turn right.",
+                    "There is a sharp bend or turn in the road ahead."
+                ],
+                correct_answer: 'Traffic must travel in one direction only.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q13,
+                incorrect_answers: [
+                    "Vehicles that stop at this red light will be photographed.",
+                    "There are police officers at this intersection.",
+                    "You must stop for a red light at this intersection."
+                ],
+                correct_answer: "Vehicles that don't stop at this red light will be photographed."
+            },
+            {
+                question: "This road sign means that parking is permitted",
+                img: ds_t5_q14,
+                incorrect_answers: [
+                    "for electric vehicles.",
+                    "for all vehicles.",
+                    "only for vehicles with very young child passengers."
+                ],
+                correct_answer: 'only for vehicles displaying a valid Accessible Parking Permnit.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q15,
+                incorrect_answers: [
+                    "There are no right turns allowed.",
+                    "There are no U-turns allowed.",
+                    "There are no left turns allowed."
+                ],
+                correct_answer: 'There is a concealed side road ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q16,
+                incorrect_answers: [
+                    "Hotel",
+                    "Heliport",
+                    "Hill"
+                ],
+                correct_answer: 'Hospital'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q17,
+                incorrect_answers: [
+                    "There is a danger ahead.",
+                    "Ther is an intersection ahead.",
+                    "This road is closed ahead."
+                ],
+                correct_answer: 'There is a dead end ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q18,
+                incorrect_answers: [
+                    "There is a intersection near school zone ahead.",
+                    "There is a railway crossing ahead.",
+                    "There is an intersection ahead."
+                ],
+                correct_answer: 'There is a hidden school bus ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q19,
+                incorrect_answers: [
+                    "There is a winding road ahead.",
+                    "There maybe a land sliding ahead.",
+                    "Ther is winding road ahead."
+                ],
+                correct_answer: 'The road might be slippery when wet ahead.'
+            },
+            {
+                question: "What does this road sign mean ?",
+                img: ds_t5_q20,
+                incorrect_answers: [
+                    "The left line ends.",
+                    "There is a sharp left turn ahead.",
+                    "There is an additional lane ahead."
+                ],
+                correct_answer: 'The right lane ends ahead.'
+            },
         ]
     }
 }
-
-// {
-//     question: "",
-//         incorrect_answers: [
-//             "",
-//             "",
-//             ""
-//         ],
-//             correct_answer: ''
-// },
