@@ -1,128 +1,3 @@
-import ds_t1_q1 from "./testsImg/ds_t1_q1.png"
-import ds_t1_q2 from "./testsImg/ds_t1_q2.png"
-import ds_t1_q3 from "./testsImg/ds_t1_q3.png"
-import ds_t1_q4 from "./testsImg/ds_t1_q4.png"
-import ds_t1_q5 from "./testsImg/ds_t1_q5.png"
-import ds_t1_q6 from "./testsImg/ds_t1_q6.png"
-import ds_t1_q7 from "./testsImg/ds_t1_q7.png"
-import ds_t1_q8 from "./testsImg/ds_t1_q8.png"
-import ds_t1_q9 from "./testsImg/ds_t1_q9.png"
-import ds_t1_q10 from "./testsImg/ds_t1_q10.png"
-import ds_t1_q11 from "./testsImg/ds_t1_q11.png"
-import ds_t1_q12 from "./testsImg/ds_t1_q12.png"
-import ds_t1_q13 from "./testsImg/ds_t1_q13.png"
-import ds_t1_q14 from "./testsImg/ds_t1_q14.png"
-import ds_t1_q15 from "./testsImg/ds_t1_q15.png"
-import ds_t1_q16 from "./testsImg/ds_t1_q16.png"
-import ds_t1_q17 from "./testsImg/ds_t1_q17.png"
-import ds_t1_q18 from "./testsImg/ds_t1_q18.png"
-import ds_t1_q19 from "./testsImg/ds_t1_q19.png"
-import ds_t1_q20 from "./testsImg/ds_t1_q20.png"
-
-import ds_t2_q1 from "./testsImg/ds_t2_q1.png"
-import ds_t2_q2 from "./testsImg/ds_t2_q2.png"
-import ds_t2_q3 from "./testsImg/ds_t2_q3.png"
-import ds_t2_q4 from "./testsImg/ds_t2_q4.png"
-import ds_t2_q5 from "./testsImg/ds_t2_q5.png"
-import ds_t2_q6 from "./testsImg/ds_t2_q6.png"
-import ds_t2_q8 from "./testsImg/ds_t2_q8.png"
-import ds_t2_q9 from "./testsImg/ds_t2_q9.png"
-import ds_t2_q10 from "./testsImg/ds_t2_q10.png"
-import ds_t2_q11 from "./testsImg/ds_t2_q11.png"
-import ds_t2_q12 from "./testsImg/ds_t2_q12.png"
-import ds_t2_q13 from "./testsImg/ds_t2_q13.png"
-import ds_t2_q14 from "./testsImg/ds_t2_q14.png"
-import ds_t2_q15 from "./testsImg/ds_t2_q15.png"
-import ds_t2_q16 from "./testsImg/ds_t2_q16.png"
-import ds_t2_q17 from "./testsImg/ds_t2_q17.png"
-import ds_t2_q18 from "./testsImg/ds_t2_q18.png"
-import ds_t2_q19 from "./testsImg/ds_t2_q19.png"
-import ds_t2_q20 from "./testsImg/ds_t2_q20.png"
-
-
-import ds_t3_q1 from "./testsImg/ds_t3_q1.png"
-import ds_t3_q2 from "./testsImg/ds_t3_q2.png"
-import ds_t3_q3 from "./testsImg/ds_t3_q3.png"
-import ds_t3_q4 from "./testsImg/ds_t3_q4.png"
-import ds_t3_q5 from "./testsImg/ds_t3_q5.png"
-import ds_t3_q6 from "./testsImg/ds_t3_q6.png"
-import ds_t3_q7 from "./testsImg/ds_t3_q7.png"
-import ds_t3_q8 from "./testsImg/ds_t3_q8.png"
-import ds_t3_q9 from "./testsImg/ds_t3_q9.png"
-import ds_t3_q10 from "./testsImg/ds_t3_q10.png"
-import ds_t3_q11 from "./testsImg/ds_t3_q11.png"
-import ds_t3_q12 from "./testsImg/ds_t3_q12.png"
-import ds_t3_q13 from "./testsImg/ds_t3_q13.png"
-import ds_t3_q14 from "./testsImg/ds_t3_q14.png"
-import ds_t3_q15 from "./testsImg/ds_t3_q15.png"
-import ds_t3_q16 from "./testsImg/ds_t3_q16.png"
-import ds_t3_q17 from "./testsImg/ds_t3_q17.png"
-import ds_t3_q18 from "./testsImg/ds_t3_q18.png"
-import ds_t3_q19 from "./testsImg/ds_t3_q19.png"
-import ds_t3_q20 from "./testsImg/ds_t3_q20.png"
-
-
-import ds_t4_q1 from "./testsImg/ds_t4_q1.png"
-import ds_t4_q2 from "./testsImg/ds_t4_q2.png"
-import ds_t4_q3 from "./testsImg/ds_t4_q3.png"
-import ds_t4_q4 from "./testsImg/ds_t4_q4.png"
-import ds_t4_q5 from "./testsImg/ds_t4_q5.png"
-import ds_t4_q6 from "./testsImg/ds_t4_q6.png"
-import ds_t4_q7 from "./testsImg/ds_t4_q7.png"
-import ds_t4_q8 from "./testsImg/ds_t4_q8.png"
-import ds_t4_q9 from "./testsImg/ds_t4_q9.png"
-import ds_t4_q10 from "./testsImg/ds_t4_q10.png"
-import ds_t4_q11 from "./testsImg/ds_t4_q11.png"
-import ds_t4_q12 from "./testsImg/ds_t4_q12.png"
-import ds_t4_q13 from "./testsImg/ds_t4_q13.png"
-import ds_t4_q14 from "./testsImg/ds_t4_q14.png"
-import ds_t4_q15 from "./testsImg/ds_t4_q15.png"
-import ds_t4_q16 from "./testsImg/ds_t4_q16.png"
-import ds_t4_q17 from "./testsImg/ds_t4_q17.png"
-import ds_t4_q18 from "./testsImg/ds_t4_q18.png"
-import ds_t4_q19 from "./testsImg/ds_t4_q19.png"
-import ds_t4_q20 from "./testsImg/ds_t4_q20.png"
-
-
-
-import ds_t5_q1 from "./testsImg/ds_t5_q1.png"
-import ds_t5_q2 from "./testsImg/ds_t5_q2.png"
-import ds_t5_q3 from "./testsImg/ds_t5_q3.png"
-import ds_t5_q4 from "./testsImg/ds_t5_q4.png"
-import ds_t5_q5 from "./testsImg/ds_t5_q5.png"
-import ds_t5_q6 from "./testsImg/ds_t5_q6.png"
-import ds_t5_q7 from "./testsImg/ds_t5_q7.png"
-import ds_t5_q9 from "./testsImg/ds_t5_q9.png"
-import ds_t5_q10 from "./testsImg/ds_t5_q10.png"
-import ds_t5_q11 from "./testsImg/ds_t5_q11.png"
-import ds_t5_q12 from "./testsImg/ds_t5_q12.png"
-import ds_t5_q13 from "./testsImg/ds_t5_q13.png"
-import ds_t5_q14 from "./testsImg/ds_t5_q14.png"
-import ds_t5_q15 from "./testsImg/ds_t5_q15.png"
-import ds_t5_q16 from "./testsImg/ds_t5_q16.png"
-import ds_t5_q17 from "./testsImg/ds_t5_q17.png"
-import ds_t5_q18 from "./testsImg/ds_t5_q18.png"
-import ds_t5_q19 from "./testsImg/ds_t5_q19.png"
-import ds_t5_q20 from "./testsImg/ds_t5_q20.png"
-
-import dr_t1_q2 from "./testsImg/dr_t1_q2.png"
-import dr_t1_q9 from "./testsImg/dr_t1_q9.png"
-import dr_t2_q2 from "./testsImg/dr_t2_q2.png"
-import dr_t2_q4 from "./testsImg/dr_t2_q4.png"
-import dr_t3_q11 from "./testsImg/dr_t3_q11.png"
-import dr_t3_q19 from "./testsImg/dr_t3_q19.png"
-import dr_t4_q9 from "./testsImg/dr_t4_q9.png"
-import dr_t4_q10 from "./testsImg/dr_t4_q10.png"
-import dr_t4_q12 from "./testsImg/dr_t4_q12.png"
-import dr_t4_q18 from "./testsImg/dr_t4_q18.png"
-import dr_t4_q20 from "./testsImg/dr_t4_q20.png"
-import dr_t5_q5 from "./testsImg/dr_t5_q5.png"
-import dr_t5_q6 from "./testsImg/dr_t5_q6.png"
-import dr_t5_q7 from "./testsImg/dr_t5_q7.png"
-
-
-
-
 export const testsArr = {
     drivingRules: {
         test1: [
@@ -137,7 +12,7 @@ export const testsArr = {
             },
             {
                 question: "At an intersection, the traffic light is red, but a police officer motions you to go through. What should you do ?",
-                img: dr_t1_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444493/Image%20for%20tests/dr_t1_q2_jhvpov.png',
                 incorrect_answers: [
                     "Stop and make sure that the police officer really wants you to go through",
                     "Tell the police officer that the light is red",
@@ -201,7 +76,7 @@ export const testsArr = {
             },
             {
                 question: "If two vehicles approach an uncontrolled intersection from opposite directions at the same time, one going straight while the other is turning left, which vehicle has the right-of-way?",
-                img: dr_t1_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444492/Image%20for%20tests/dr_t1_q9_tsci80.png',
                 incorrect_answers: [
                     "The one turning left has the right-of-way.",
                     "Both have the right-of-way.",
@@ -321,7 +196,7 @@ export const testsArr = {
             },
             {
                 question: "You are on two-lane road. There is a solid yellow line next to a broken yellow line in the center of the road. The solid yellow line is on your side of the road. Which of the following statements is true?",
-                img: dr_t2_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444500/Image%20for%20tests/dr_t2_q2_gi3asr.png',
                 incorrect_answers: [
                     "Pass only when no traffic is in sight",
                     "It is safe to pass",
@@ -340,7 +215,7 @@ export const testsArr = {
             },
             {
                 question: "A school bus with flashing red lights is stopped ahead of you. What does the law require you to do when meeting or overtaking the bus?",
-                img: dr_t2_q4,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444509/Image%20for%20tests/dr_t2_q4_xy5zey.png',
                 incorrect_answers: [
                     "Id does not matter as long as you sound your horn",
                     "Slow down and pass with care",
@@ -586,7 +461,7 @@ export const testsArr = {
         },
         {
             question: "This driver is using a hand signal. The driver intends to",
-            img: dr_t3_q11,
+            img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444538/Image%20for%20tests/dr_t3_q11_g5j1yk.png',
             incorrect_answers: [
                 "slow down or stop",
                 "speed up",
@@ -659,7 +534,7 @@ export const testsArr = {
         },
         {
             question: "This driver is using a hand signal. The driver intends to",
-            img: dr_t3_q19,
+            img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444515/Image%20for%20tests/dr_t3_q19_d1wzu9.png',
             incorrect_answers: [
                 "turn right.",
                 "speed up.",
@@ -752,7 +627,7 @@ export const testsArr = {
             },
             {
                 question: "What do broken white lines indicate?",
-                img: dr_t4_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444537/Image%20for%20tests/dr_t4_q9_npgzoy.png',
                 incorrect_answers: [
                     "They indicate that passing is prohibited.",
                     "They separate lanes of traffic travelling in opposite directions.",
@@ -762,7 +637,7 @@ export const testsArr = {
             },
             {
                 question: "To get your vehicle out of a skid, you should",
-                img: dr_t4_q10,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444516/Image%20for%20tests/dr_t4_q10_zh92aq.png',
                 incorrect_answers: [
                     "steer straight ahead.",
                     "apply the brakes hard.",
@@ -781,7 +656,7 @@ export const testsArr = {
             },
             {
                 question: "This driver is using a hand signal. The driver intends to",
-                img: dr_t4_q12,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444535/Image%20for%20tests/dr_t4_q12_u2nzz8.png',
                 incorrect_answers: [
                     "turn left.",
                     "speed up.",
@@ -836,7 +711,7 @@ export const testsArr = {
             },
             {
                 question: "What does this sign mean ?",
-                img: dr_t4_q18,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444574/Image%20for%20tests/dr_t4_q18_wsc5uo.png',
                 incorrect_answers: [
                     "When a school bus stops with its red lights flashing and its stop sign arm swung out, you must stop at any point before reaching the bus.",
                     "When a school bus stops with its red lights flashing and its stop sign arm swung out, you may proceed if you're on the opposite side of the road.",
@@ -855,7 +730,7 @@ export const testsArr = {
             },
             {
                 question: "Unless otherwise posted, the maximum speed limit in cities, towns and villages is",
-                img: dr_t4_q20,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444537/Image%20for%20tests/dr_t4_q20_dsurtf.png',
                 incorrect_answers: [
                     "40 km/h",
                     "60  km/h",
@@ -903,7 +778,7 @@ export const testsArr = {
             },
             {
                 question: "What does a red signal light with a green arrow mean ?",
-                img: dr_t5_q5,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444548/Image%20for%20tests/dr_t5_q5_c77wdq.png',
                 incorrect_answers: [
                     "Stop and wait for the green light before turning in the direction of the arrow.",
                     "Stop and wait for a green light. The green arrow is a signal for pedestrians.",
@@ -913,7 +788,7 @@ export const testsArr = {
             },
             {
                 question: "If you fail to stop for a stopped school bus whose red lights are flashing, you will face which of the following penalties for a first offense?",
-                img: dr_t5_q6,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444554/Image%20for%20tests/dr_t5_q6_dkeups.png',
                 incorrect_answers: [
                     "A fine up to $500 and 4 demerit points.",
                     "A requirement to retake your road test.",
@@ -923,7 +798,7 @@ export const testsArr = {
             },
             {
                 question: "In Ontario, when driving at night, you dim your headlights",
-                img: dr_t5_q7,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444563/Image%20for%20tests/dr_t5_q7_j1a17x.png',
                 incorrect_answers: [
                     "whenever you are within 60 metres of an oncoming vehicle or with 150 metres of a vehicle you are following.",
                     "whenever you are within 400 metres of another vehicle.",
@@ -1064,7 +939,7 @@ export const testsArr = {
         test1: [
             {
                 question: "What does this sign mean ?",
-                img: ds_t1_q1,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444572/Image%20for%20tests/ds_t1_q1_hepvxn.png',
                 incorrect_answers: [
                     "No trucks allowed",
                     "Slow down for trucks",
@@ -1074,7 +949,7 @@ export const testsArr = {
             },
             {
                 question: "What does a pair of these signs mean ?",
-                img: ds_t1_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444572/Image%20for%20tests/ds_t1_q2_jqm6uy.png',
                 incorrect_answers: [
                     "Do not park in the area between the signs",
                     "Do not stop in the area between the signs expect to load or unload passengers or merchhandise",
@@ -1084,7 +959,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sing mean ?",
-                img: ds_t1_q3,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444571/Image%20for%20tests/ds_t1_q3_oyzym5.png',
                 incorrect_answers: [
                     "You may not turn left on a red light",
                     "There is no road on the right side of the intersection",
@@ -1094,7 +969,7 @@ export const testsArr = {
             },
             {
                 question: "What does this sign mean ?",
-                img: ds_t1_q4,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444573/Image%20for%20tests/ds_t1_q4_qvghfj.png',
                 incorrect_answers: [
                     "Ther is winding road ahead",
                     "The road turns right and then left",
@@ -1104,7 +979,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q5,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444580/Image%20for%20tests/ds_t1_q5_bmdehl.png',
                 incorrect_answers: [
                     "Hidden intersection ahead",
                     "Hidden bus bay ahead",
@@ -1114,7 +989,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q6,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444584/Image%20for%20tests/ds_t1_q6_ur2cp8.png',
                 incorrect_answers: [
                     "This lane is for buses only",
                     "This lane is not for bicycles",
@@ -1124,7 +999,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q7,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444594/Image%20for%20tests/ds_t1_q7_hjq4gm.png',
                 incorrect_answers: [
                     "You may stop temporarily to load or unload merchandise but not passengers.",
                     "You may not stop for any reason.",
@@ -1134,7 +1009,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q8,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444619/Image%20for%20tests/ds_t1_q8_coc3r8.png',
                 incorrect_answers: [
                     "Watch for pedestrians and be prepared to share for the road with them.",
                     "There is road work ahead.",
@@ -1144,7 +1019,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444601/Image%20for%20tests/ds_t1_q9_zvtm9f.png',
                 incorrect_answers: [
                     "Divided roadway ahead",
                     "Low-clearance underpass ahead",
@@ -1154,7 +1029,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q10,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445029/Image%20for%20tests/ds_t1_q10_uwdkek.png',
                 incorrect_answers: [
                     "Accekeration lane ahead.",
                     "Narrow passage ahead.",
@@ -1164,7 +1039,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q11,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444612/Image%20for%20tests/ds_t1_q11_qj93ut.png',
                 incorrect_answers: [
                     "No smoking for more than 3 minutes.",
                     "No stopping for more than 3 minutes.",
@@ -1174,7 +1049,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q12,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444605/Image%20for%20tests/ds_t1_q12_zb2r2o.png',
                 incorrect_answers: [
                     "School zone ahead.",
                     "Bumpy road ahead.",
@@ -1184,7 +1059,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q13,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444624/Image%20for%20tests/ds_t1_q13_fbpf4b.png',
                 incorrect_answers: [
                     "Keep right if there is faster traffic.",
                     "There is a sharp bend or curve in the road ahead.",
@@ -1194,7 +1069,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q14,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444627/Image%20for%20tests/ds_t1_q14_guyd7r.png',
                 incorrect_answers: [
                     "Do not honk at animals.",
                     "There is a zoo ahead.",
@@ -1203,7 +1078,7 @@ export const testsArr = {
                 correct_answer: 'Deer regularly cross here.'
             }, {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q15,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444633/Image%20for%20tests/ds_t1_q15_zko42m.png',
                 incorrect_answers: [
                     "Ther is movable bridge ahead.",
                     "Do not enter",
@@ -1213,7 +1088,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q16,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444647/Image%20for%20tests/ds_t1_q16_s4uk6d.png',
                 incorrect_answers: [
                     "There is a playground to the right.",
                     "Danger, the road ends ahead.",
@@ -1223,7 +1098,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q17,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444653/Image%20for%20tests/ds_t1_q17_bqcmks.png',
                 incorrect_answers: [
                     "Yield to the left.",
                     "Road turns left.",
@@ -1233,7 +1108,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q18,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444664/Image%20for%20tests/ds_t1_q18_mpr290.png',
                 incorrect_answers: [
                     "A road is branching off ahead.",
                     "There is a slight bend or curve in the road ahead.",
@@ -1243,7 +1118,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t1_q19,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444657/Image%20for%20tests/ds_t1_q19_njdrgf.png',
                 incorrect_answers: [
                     "Np Stopping",
                     "No parking",
@@ -1253,7 +1128,7 @@ export const testsArr = {
             },
             {
                 question: "Upon approaching a yield sign, what must you do?",
-                img: ds_t1_q20,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444657/Image%20for%20tests/ds_t1_q20_ewjszu.png',
                 incorrect_answers: [
                     "Slow down as other vehicles give you the righ-of-way.",
                     "Stop, then enter traffic quickly.",
@@ -1265,7 +1140,7 @@ export const testsArr = {
         test2: [
             {
                 question: "What does this sign mean ?",
-                img: ds_t2_q1,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444660/Image%20for%20tests/ds_t2_q1_hkijar.png',
                 incorrect_answers: [
                     "Slow down to prevent hydroplaning",
                     "The paved surface ends ahead",
@@ -1275,7 +1150,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444692/Image%20for%20tests/ds_t2_q2_uwf7jn.png',
                 incorrect_answers: [
                     "Hotel",
                     "Narrow road ahead",
@@ -1285,7 +1160,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q3,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444686/Image%20for%20tests/ds_t2_q3_wmg6hg.png',
                 incorrect_answers: [
                     "Left turns prohibited",
                     "U-turns allowed",
@@ -1295,7 +1170,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q4,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444679/Image%20for%20tests/ds_t2_q4_mcu3i0.png',
                 incorrect_answers: [
                     "You have the right-of-way",
                     "A railway crossing is ahead",
@@ -1305,7 +1180,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q5,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444683/Image%20for%20tests/ds_t2_q5_nppvl7.png',
                 incorrect_answers: [
                     "Slow-moving vehicles ahead",
                     "Dead-end street ahead",
@@ -1315,7 +1190,7 @@ export const testsArr = {
             },
             {
                 question: "What does this sign mean ?",
-                img: ds_t2_q6,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444704/Image%20for%20tests/ds_t2_q6_eyrlab.png',
                 incorrect_answers: [
                     "Divided highway ends",
                     "Two-way traffic",
@@ -1334,7 +1209,7 @@ export const testsArr = {
             },
             {
                 question: "What does this sign mean ?",
-                img: ds_t2_q8,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444709/Image%20for%20tests/ds_t2_q8_yi8afx.png',
                 incorrect_answers: [
                     "Slower traffic must turn right.",
                     "The right lane is for faster traffic.",
@@ -1344,7 +1219,7 @@ export const testsArr = {
             },
             {
                 question: "What does this sign mean ?",
-                img: ds_t2_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444715/Image%20for%20tests/ds_t2_q9_zwrlvz.png',
                 incorrect_answers: [
                     "No parking at any time.",
                     "You may not park in the designated area during the posted times.",
@@ -1354,7 +1229,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q10,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444698/Image%20for%20tests/ds_t2_q10_tpgqtq.png',
                 incorrect_answers: [
                     "You must stop for a school bus if your turn signals are flashing.",
                     "You may pass a school bus if its red signals are flashing.",
@@ -1364,7 +1239,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q11,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444702/Image%20for%20tests/ds_t2_q11_r69lau.png',
                 incorrect_answers: [
                     "You may stop and rest here.",
                     "Drive to the left of the sign.",
@@ -1374,7 +1249,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q12,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444732/Image%20for%20tests/ds_t2_q12_shikr8.png',
                 incorrect_answers: [
                     "Right turns are not allowed.",
                     "Left turns are not allowed.",
@@ -1384,7 +1259,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q13,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444723/Image%20for%20tests/ds_t2_q13_m9uwe6.png',
                 incorrect_answers: [
                     "No parking.",
                     "No stopping.",
@@ -1394,7 +1269,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q14,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444742/Image%20for%20tests/ds_t2_q14_hw36xc.png',
                 incorrect_answers: [
                     "There are no traffic signals on this road.",
                     "There is a stop sign ahead.",
@@ -1404,7 +1279,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q15,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444741/Image%20for%20tests/ds_t2_q15_icxusm.png',
                 incorrect_answers: [
                     "Maximum speed limit at night.",
                     "Maximum safe speed on the shoulder.",
@@ -1414,7 +1289,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q16,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444743/Image%20for%20tests/ds_t2_q16_jvyfyp.png',
                 incorrect_answers: [
                     "This is construction zone.",
                     "Uneven pavement ahead.",
@@ -1424,7 +1299,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q17,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444746/Image%20for%20tests/ds_t2_q17_ubbjzz.png',
                 incorrect_answers: [
                     "There is construction work one kilometre ahead.",
                     "Keep a certain distance away",
@@ -1434,7 +1309,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q18,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444743/Image%20for%20tests/ds_t2_q18_sdrizc.png',
                 incorrect_answers: [
                     "Side road near a railway ahead.",
                     "Pedestrian crosswalk ahead.",
@@ -1444,7 +1319,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q19,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444782/Image%20for%20tests/ds_t2_q19_jsxsox.png',
                 incorrect_answers: [
                     "One-way street ahead.",
                     "Hidden intersection ahead.",
@@ -1454,7 +1329,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t2_q20,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444790/Image%20for%20tests/ds_t2_q20_jrvxqj.png',
                 incorrect_answers: [
                     "Paved surface ends ahead.",
                     "Divided roadway ahead.",
@@ -1466,7 +1341,7 @@ export const testsArr = {
         test3: [
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q1,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444768/Image%20for%20tests/ds_t3_q1_hgf56j.png',
                 incorrect_answers: [
                     "You may park here",
                     "School buses load or unload in this area by turning on the flashing red lights and extending the stop arm",
@@ -1476,7 +1351,7 @@ export const testsArr = {
             },
             {
                 question: "This road sign indicates ?",
-                img: ds_t3_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444761/Image%20for%20tests/ds_t3_q2_ymn6cv.png',
                 incorrect_answers: [
                     "You must not enter this area",
                     "You may drive in any directions from any lane",
@@ -1486,7 +1361,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q3,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444763/Image%20for%20tests/ds_t3_q3_g9nsca.png',
                 incorrect_answers: [
                     "Playground",
                     "Park ahead",
@@ -1496,7 +1371,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q4,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444776/Image%20for%20tests/ds_t3_q4_sco4xu.png',
                 incorrect_answers: [
                     "This is pedestrian crosswalk",
                     "The speed limit is 40 km/h at all times",
@@ -1506,7 +1381,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q5,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444781/Image%20for%20tests/ds_t3_q5_yqwtlm.png',
                 incorrect_answers: [
                     "Recreation are ahead",
                     "Hospital ahead",
@@ -1516,7 +1391,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q6,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444785/Image%20for%20tests/ds_t3_q6_nqkcxp.png',
                 incorrect_answers: [
                     "Stay to the right of the centre island.",
                     "Keep right.",
@@ -1526,7 +1401,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q7,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444794/Image%20for%20tests/ds_t3_q7_muiksl.png',
                 incorrect_answers: [
                     "Passing is not allowed.",
                     "This is a wheelchair crossing.",
@@ -1536,7 +1411,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q8,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444831/Image%20for%20tests/ds_t3_q8_bapdop.png',
                 incorrect_answers: [
                     "Hidden intersection ahead.",
                     "Road slippery when wet.",
@@ -1546,7 +1421,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444808/Image%20for%20tests/ds_t3_q9_r6xr1u.png',
                 incorrect_answers: [
                     "All turns are allowed.",
                     "You may not park between here and the corner.",
@@ -1556,7 +1431,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q10,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444819/Image%20for%20tests/ds_t3_q10_hre2s1.png',
                 incorrect_answers: [
                     "A hiking trail.",
                     "School zone.",
@@ -1566,7 +1441,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q11,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444812/Image%20for%20tests/ds_t3_q11_cdgfjf.png',
                 incorrect_answers: [
                     "A hiking trail.",
                     "School zone.",
@@ -1576,7 +1451,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q12,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444836/Image%20for%20tests/ds_t3_q12_wdnjhb.png',
                 incorrect_answers: [
                     "Road ahead turns left, then right.",
                     "Narrow road ahead.",
@@ -1586,7 +1461,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q13,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444816/Image%20for%20tests/ds_t3_q13_bybujn.png',
                 incorrect_answers: [
                     "Maximum safe speed on the ramp. ",
                     "A speed limit change ahead.",
@@ -1596,7 +1471,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q14,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444828/Image%20for%20tests/ds_t3_q14_t17vet.png',
                 incorrect_answers: [
                     "Road under construction.",
                     "Narrow bridge ahead.",
@@ -1606,7 +1481,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q15,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444835/Image%20for%20tests/ds_t3_q15_jcgkjz.png',
                 incorrect_answers: [
                     "You must turn left.",
                     "You must turn right.",
@@ -1616,7 +1491,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q16,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444834/Image%20for%20tests/ds_t3_q16_mnaett.png',
                 incorrect_answers: [
                     "This is landing area for helicopters.",
                     "Airplanes fly low overhead.",
@@ -1626,7 +1501,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q17,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444870/Image%20for%20tests/ds_t3_q17_nzxvw7.png',
                 incorrect_answers: [
                     "There is a snowmobile repair shop ahead.",
                     "There is a snowmobile parking ahead.",
@@ -1636,7 +1511,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q18,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444849/Image%20for%20tests/ds_t3_q18_gvc27v.png',
                 incorrect_answers: [
                     "Indicates an upcoming railway crossing.",
                     "Shows directions to nearby towns or cities.",
@@ -1646,7 +1521,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q19,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444871/Image%20for%20tests/ds_t3_q19_xgh8wb.png',
                 incorrect_answers: [
                     "Railway crossing ahead.",
                     "Hidden intersection ahead.",
@@ -1656,7 +1531,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t3_q20,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444856/Image%20for%20tests/ds_t3_q20_fjjrpf.png',
                 incorrect_answers: [
                     "No children allowed.",
                     "No bicycles allowed.",
@@ -1668,7 +1543,7 @@ export const testsArr = {
         test4: [
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q1,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444887/Image%20for%20tests/ds_t4_q1_pygmkn.png',
                 incorrect_answers: [
                     "A highway interchange is 300 metres ahead",
                     "Keep right",
@@ -1678,7 +1553,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444874/Image%20for%20tests/ds_t4_q2_flkced.png',
                 incorrect_answers: [
                     "Keep right",
                     "This road turns slighly right ahead",
@@ -1688,7 +1563,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q3,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444866/Image%20for%20tests/ds_t4_q3_pzqoyd.png',
                 incorrect_answers: [
                     "Pedestrian crossing",
                     "Do not enter",
@@ -1698,7 +1573,7 @@ export const testsArr = {
             },
             {
                 question: "What does this construction sign mean ?",
-                img: ds_t4_q4,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444890/Image%20for%20tests/ds_t4_q4_sd0t9e.png',
                 incorrect_answers: [
                     "The pavement is milled or grooved",
                     "Slow down and obey the flagger's direction",
@@ -1708,7 +1583,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q5,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444898/Image%20for%20tests/ds_t4_q5_ztlzwl.png',
                 incorrect_answers: [
                     "No trucks allowed",
                     "Passing not allowed",
@@ -1718,7 +1593,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q6,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444896/Image%20for%20tests/ds_t4_q6_exq1ji.png',
                 incorrect_answers: [
                     "Buses are not allowed in this lane during the times and days posted.",
                     "No stopping is allowed during the times and days posted.",
@@ -1728,7 +1603,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q7,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444912/Image%20for%20tests/ds_t4_q7_gzjam8.png',
                 incorrect_answers: [
                     "This lane is for bicycles only.",
                     "No pedestrians are allowed on this road.",
@@ -1738,7 +1613,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q8,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444892/Image%20for%20tests/ds_t4_q8_tjofok.png',
                 incorrect_answers: [
                     "This is a pedestiran crossover. Be prepared to stop and yield the right-of-way to pedestrians.",
                     "There is a railway crossing ahead. Be alert for trains.",
@@ -1748,7 +1623,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444915/Image%20for%20tests/ds_t4_q9_xisnu0.png',
                 incorrect_answers: [
                     "No left turns are allowed",
                     "No U-turns are allowed.",
@@ -1758,7 +1633,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q10,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444919/Image%20for%20tests/ds_t4_q10_z5p9q6.png',
                 incorrect_answers: [
                     "You may exit if you remain in the right-hand lane.",
                     "You must not drive in the right-hand lane under any circumstances.",
@@ -1768,7 +1643,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q11,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444926/Image%20for%20tests/ds_t4_q11_cdm4gm.png',
                 incorrect_answers: [
                     "Be cautious of pedestrians.",
                     "Watch for traffic signals.",
@@ -1778,7 +1653,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q12,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444936/Image%20for%20tests/ds_t4_q12_n6o3o1.png',
                 incorrect_answers: [
                     "This is a high-crime area.",
                     "Do not enter this area.",
@@ -1788,7 +1663,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q13,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444921/Image%20for%20tests/ds_t4_q13_lzxpzf.png',
                 incorrect_answers: [
                     "Truck entrance ahead on the right.",
                     "Bus entrance ahead on the right.",
@@ -1798,7 +1673,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q14,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444944/Image%20for%20tests/ds_t4_q14_blu02q.png',
                 incorrect_answers: [
                     "A vehicle carrying dangerous goods.",
                     "An emergency vehicle.",
@@ -1808,7 +1683,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q15,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444924/Image%20for%20tests/ds_t4_q15_bfsksp.png',
                 incorrect_answers: [
                     "The highway ends ahead; you must move into the righ-hand lane.",
                     "You may exit if you remain in the right-hand lane.",
@@ -1818,7 +1693,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q16,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444945/Image%20for%20tests/ds_t4_q16_jnel7p.png',
                 incorrect_answers: [
                     "Safety check ahead.",
                     "No pavement 500 feet ahead.",
@@ -1828,7 +1703,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q17,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444943/Image%20for%20tests/ds_t4_q17_vsgbr9.png',
                 incorrect_answers: [
                     "There is a snowmobile repair shop ahead.",
                     "Only snowmobiles may park here.",
@@ -1838,7 +1713,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q18,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444961/Image%20for%20tests/ds_t4_q18_dq0cyb.png',
                 incorrect_answers: [
                     "End of 50 km/h zone.",
                     "Speed limit for rural school zone.",
@@ -1848,7 +1723,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q19,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444969/Image%20for%20tests/ds_t4_q19_kfucz2.png',
                 incorrect_answers: [
                     "Factory ahead.",
                     "Construction zone ahead.",
@@ -1858,7 +1733,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t4_q20,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444964/Image%20for%20tests/ds_t4_q20_ywoy7u.png',
                 incorrect_answers: [
                     "Keep left.",
                     "Keep right.",
@@ -1870,7 +1745,7 @@ export const testsArr = {
         test5: [
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q1,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444982/Image%20for%20tests/ds_t5_q1_w8dpno.png',
                 incorrect_answers: [
                     "Hidden intersection",
                     "No left turns",
@@ -1880,7 +1755,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q2,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444972/Image%20for%20tests/ds_t5_q2_xohxez.png',
                 incorrect_answers: [
                     "School zone",
                     "Provincial park",
@@ -1890,7 +1765,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q3,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444962/Image%20for%20tests/ds_t5_q3_etif9k.png',
                 incorrect_answers: [
                     "Road work ahead",
                     "Pedestrian area",
@@ -1900,7 +1775,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q4,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444986/Image%20for%20tests/ds_t5_q4_ayh9rj.png',
                 incorrect_answers: [
                     "A hidden school bus stop",
                     "Truck entrance ahead on the right",
@@ -1910,7 +1785,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q5,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444990/Image%20for%20tests/ds_t5_q5_gexffw.png',
                 incorrect_answers: [
                     "There is a stop sign ahead",
                     "Slow down and proceed with caution",
@@ -1920,7 +1795,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q6,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445005/Image%20for%20tests/ds_t5_q6_rn0n0d.png',
                 incorrect_answers: [
                     "Two lanes will merge into one.",
                     "Two lanes are closed ahead.",
@@ -1930,7 +1805,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q7,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665444971/Image%20for%20tests/ds_t5_q7_taz8zc.png',
                 incorrect_answers: [
                     "The road is slippery when wet.",
                     "Drive with caution.",
@@ -1949,7 +1824,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q9,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445008/Image%20for%20tests/ds_t5_q9_byx3fu.png',
                 incorrect_answers: [
                     "Do not turn left except during the times shown.",
                     "Do not turn left.",
@@ -1959,7 +1834,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q10,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445006/Image%20for%20tests/ds_t5_q10_omly6b.png',
                 incorrect_answers: [
                     "Bridge crossing ahead.",
                     "Gravel road ahead.",
@@ -1969,7 +1844,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q11,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445010/Image%20for%20tests/ds_t5_q11_azg4ci.png',
                 incorrect_answers: [
                     "No parking.",
                     "No left turns.",
@@ -1979,7 +1854,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q12,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445008/Image%20for%20tests/ds_t5_q12_sulden.png',
                 incorrect_answers: [
                     "Keep to the right of the traffic island.",
                     "Vehicles in this lane must turn right.",
@@ -1989,7 +1864,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q13,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445015/Image%20for%20tests/ds_t5_q13_cmarxo.png',
                 incorrect_answers: [
                     "Vehicles that stop at this red light will be photographed.",
                     "There are police officers at this intersection.",
@@ -1999,7 +1874,7 @@ export const testsArr = {
             },
             {
                 question: "This road sign means that parking is permitted",
-                img: ds_t5_q14,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445011/Image%20for%20tests/ds_t5_q14_oimiru.png',
                 incorrect_answers: [
                     "for electric vehicles.",
                     "for all vehicles.",
@@ -2009,7 +1884,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q15,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445028/Image%20for%20tests/ds_t5_q15_vvzst0.png',
                 incorrect_answers: [
                     "There are no right turns allowed.",
                     "There are no U-turns allowed.",
@@ -2019,7 +1894,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q16,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445019/Image%20for%20tests/ds_t5_q16_fqwcvt.png',
                 incorrect_answers: [
                     "Hotel",
                     "Heliport",
@@ -2029,7 +1904,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q17,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445013/Image%20for%20tests/ds_t5_q17_usy0ph.jpg',
                 incorrect_answers: [
                     "There is a danger ahead.",
                     "Ther is an intersection ahead.",
@@ -2039,7 +1914,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q18,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445015/Image%20for%20tests/ds_t5_q18_ktwhj3.jpg',
                 incorrect_answers: [
                     "There is a intersection near school zone ahead.",
                     "There is a railway crossing ahead.",
@@ -2049,7 +1924,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q19,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445016/Image%20for%20tests/ds_t5_q19_bbedvp.jpg',
                 incorrect_answers: [
                     "There is a winding road ahead.",
                     "There maybe a land sliding ahead.",
@@ -2059,7 +1934,7 @@ export const testsArr = {
             },
             {
                 question: "What does this road sign mean ?",
-                img: ds_t5_q20,
+                img: 'https://res.cloudinary.com/depqxsflw/image/upload/v1665445016/Image%20for%20tests/ds_t5_q20_klh6ma.jpg',
                 incorrect_answers: [
                     "The left line ends.",
                     "There is a sharp left turn ahead.",
