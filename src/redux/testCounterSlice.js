@@ -46,6 +46,7 @@ const testCounterSlice = createSlice({
         },
         setScore(state, action) {
             const { category, testNumber } = current(state.currentTest)
+            // eslint-disable-next-line
             { action.payload === "inc" ? state.testsData[category][testNumber].correct += 1 : state.testsData[category][testNumber].incorrect += 1; }
         },
         setClearResults(state, action) {

@@ -13,6 +13,7 @@ function QuizBlock({ currentQuestion, setCurrentQuestion, options, quizArr, corr
   const [checked, setChecked] = useState(false)
 
   const checkAnswer = () => {
+    // eslint-disable-next-line
     { selected === correctAns ? dispatch(setScore('inc')) : dispatch(setScore('dec')) }
     setChecked(true);
   }
