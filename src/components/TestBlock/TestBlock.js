@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setStartStatus } from '../../redux/testCounterSlice'
 
 
-function TestBlock({ title, number, category, setCategory, setTestNumber }) {
+function TestBlock({ title, number, category }) {
   const state = useSelector((state) => state.userData.testsData)
   const stateTests = useSelector((state) => state.testArr)
   const testNumber = 'test' + number
@@ -32,7 +32,9 @@ function TestBlock({ title, number, category, setCategory, setTestNumber }) {
       </div>
       <Button sx={btnStyle}
         href='/quiz'
-        onClick={() => handleClick(category, number)}>{state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}</Button>
+        onClick={() => handleClick(number, category)}>
+        {state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}
+      </Button>
     </li>
 
   );

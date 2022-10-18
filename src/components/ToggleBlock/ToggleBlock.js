@@ -31,11 +31,12 @@ function ToggleBlock({ title, category }) {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {expanded ? <ul className={styles.listOfTests}>
-            {arrayWithTests.map((item, index) => {
-              return <TestBlock title={item} number={index + 1} key={item} category={category} />
-            })}
-          </ul> : false}
+          {expanded ?
+            <ul className={styles.listOfTests}>
+              {arrayWithTests.map((item, index) => {
+                return <TestBlock title={item} number={index + 1} key={item} category={category} />
+              })}
+            </ul> : false}
         </AccordionDetails>
       </Accordion>
     </section >
