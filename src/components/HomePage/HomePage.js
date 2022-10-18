@@ -60,7 +60,7 @@ const HomePage = () => {
                         <p className={styles.stepText}>
                             So this is the final step. You have already read the book and know the general amount of information. You prepared according to our tests, which are constantly updated, and are as similar as possible to those that will be. All you have to do is come and calmly pass the real test and get a G1 driver's license. Good luck!
                         </p>
-                        <a href='https://drivetest.ca/find-a-drivetest-centre/find-a-drivetest-centre/' target="_blank"><span className={styles.stepLink}>Find DriveTest Center</span></a>
+                        <a href='https://drivetest.ca/find-a-drivetest-centre/find-a-drivetest-centre/' rel="noreferrer" target="_blank"><span className={styles.stepLink}>Find DriveTest Center</span></a>
                     </div>
                 </div>
             </section>
