@@ -2,6 +2,8 @@ import styles from './TestBlock.module.scss';
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from 'react-redux'
 import { setStartStatus } from '../../redux/testCounterSlice'
+import { Link } from 'react-router-dom';
+
 
 
 function TestBlock({ title, number, category }) {
@@ -33,9 +35,9 @@ function TestBlock({ title, number, category }) {
       <Button sx={btnStyle}
 
         onClick={() => handleClick(category, number)}>
-        <a href='/quiz'>
+        <Link to='/quiz'>
           {state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}
-        </a>
+        </Link>
       </Button>
     </li>
 
