@@ -27,6 +27,7 @@ const testCounterSlice = createSlice({
             const testNumber = 'test' + number;
             const currentState = current(state.testsData);
             let currStatus = currentState[category][testNumber].status;
+            console.log(currStatus)
             if (currStatus === 'Not started') {
                 state.testsData[category][testNumber].status = 'Started'
                 state.currentTest = { testNumber, category }

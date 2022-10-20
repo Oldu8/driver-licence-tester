@@ -32,7 +32,7 @@ function TestBlock({ title, number, category }) {
       </div>
       <Button sx={btnStyle}
         href='/quiz'
-        onClick={() => handleClick(number, category)}>
+        onClick={() => handleClick(category, number)}>
         {state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}
       </Button>
     </li>

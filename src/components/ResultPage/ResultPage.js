@@ -8,13 +8,14 @@ import TableRow from '@mui/material/TableRow';
 import { useSelector } from 'react-redux'
 import { StyledTableCellHead, StyledTableRow, StyledTableCellBody } from "../../functions/funcForMUITable";
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function ResultPage() {
   const state = useSelector((state) => state.userData.testsData)
   function clearResult() {
     localStorage.clear();
-    window.location.reload();
+    // window.location.reload();
   }
 
   const finalArr = [];
@@ -76,7 +77,13 @@ function ResultPage() {
         </Table>
       </TableContainer>
       <div className={styles.buttonBox}>
-        <Button color="error" variant="contained" size="large" onClick={() => clearResult()}>Clear all my results</Button>
+
+        <Button color="error" variant="contained" size="large" onClick={() => clearResult()}>
+          <a href="/result" classnames={styles.btn}>
+            Clear all my results
+          </a>
+        </Button>
+
       </div>
     </section >
   );

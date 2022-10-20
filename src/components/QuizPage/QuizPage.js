@@ -46,7 +46,7 @@ function QuizPage() {
         ])
       )
     }
-  }, [currentQuestion, quizArr])
+  }, [currentQuestion])
 
   const handleSubmit = () => {
     userName.length < 3 ?
