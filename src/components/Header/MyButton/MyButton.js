@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from './MyButton.module.scss'
+import { Link } from 'react-router-dom';
+
 
 function MyButton({ link, name }) {
     return (
-        <a href={link} className={styles.button}>{name}</a>
+        <Link to={link} className={styles.button}>{name}</Link>
     )
 }
 
