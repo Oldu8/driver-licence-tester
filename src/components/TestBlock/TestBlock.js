@@ -31,9 +31,11 @@ function TestBlock({ title, number, category }) {
         <p className={styles.status}>{state[category]['test' + number].status}</p>
       </div>
       <Button sx={btnStyle}
-        href='/quiz'
+
         onClick={() => handleClick(category, number)}>
-        {state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}
+        <a href='/quiz'>
+          {state[category]['test' + number].status === 'Not started' ? 'Start' : 'Retake'}
+        </a>
       </Button>
     </li>
 

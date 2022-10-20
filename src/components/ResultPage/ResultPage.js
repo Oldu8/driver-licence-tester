@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import { useSelector } from 'react-redux'
 import { StyledTableCellHead, StyledTableRow, StyledTableCellBody } from "../../functions/funcForMUITable";
 import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 function ResultPage() {
