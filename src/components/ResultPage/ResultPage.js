@@ -79,7 +79,7 @@ function ResultPage() {
       <div className={styles.buttonBox}>
 
         <Button color="error" variant="contained" size="large" onClick={() => clearResult()}>
-          <a href="/result" classnames={styles.btn}>
+          <a href="/" classnames={styles.btn}>
             Clear all my results
           </a>
         </Button>
