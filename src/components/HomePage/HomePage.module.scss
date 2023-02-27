@@ -94,6 +94,10 @@
   font-weight: 600;
   padding: 15px 0;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    padding: 5px 0;
+  }
 }
 
 .subText {
@@ -101,6 +105,10 @@
   text-align: justify;
   max-width: 80%;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    font-size: 0.85rem;
+    padding: 20px 0;
+  }
 }
 .stepsBlock {
   display: flex;
@@ -129,6 +137,19 @@
     margin-left: 50%;
     margin-bottom: 0;
   }
+  @media screen and (max-width: 768px) {
+    height: 350px;
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+    &:nth-child(3) {
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    height: 420px;
+  }
 }
 
 .stepLink {
@@ -152,5 +173,11 @@
     padding: 0.5rem;
     font-size: 16px;
     margin-bottom: 0.5rem;
+  }
+}
+
+.stepText {
+  @media screen and (max-width: 425px) {
+    font-size: 0.8rem;
   }
 }
